@@ -58,7 +58,7 @@ function App() {
   const [erreur, setErreur] = useState<string | null>(null);
   // Charger les données des recettes
   useEffect(() => {
-    fetch('/data/recettes.json')
+    fetch(`${import.meta.env.BASE_URL}data/recettes.json`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Impossible de charger les recettes');
