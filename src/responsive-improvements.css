@@ -1,0 +1,363 @@
+/* ===================================
+   AMÉLIORATIONS RESPONSIVE COMPLÈTES
+   PC Portable, iPhone Portrait & Paysage
+   =================================== */
+
+/* ====================================
+   MODE PAYSAGE MOBILE (iPhone horizontal)
+   ==================================== */
+@media (max-width: 768px) and (orientation: landscape) {
+  /* Header plus compact en paysage */
+  .app-header {
+    padding: 0.5rem 1rem;
+  }
+
+  .app-header h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.125rem;
+  }
+
+  .app-header .subtitle {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-actions {
+    gap: 0.375rem;
+  }
+
+  .btn-generate,
+  .btn-reset {
+    min-height: 40px;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Navigation plus compacte en paysage */
+  .navigation {
+    padding: 0.25rem 0;
+    padding-bottom: calc(0.25rem + env(safe-area-inset-bottom));
+  }
+
+  .nav-link {
+    padding: 0.375rem 1rem;
+    min-width: 70px;
+  }
+
+  .nav-icon {
+    font-size: 1.25rem;
+  }
+
+  .nav-label {
+    font-size: 0.65rem;
+  }
+
+  /* Modales en plein écran optimisées pour paysage */
+  .modal-content {
+    max-height: 90vh !important;
+    height: auto !important;
+    padding: 1rem !important;
+  }
+
+  .modal-header {
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .modal-header h2 {
+    font-size: 1rem !important;
+  }
+
+  .btn-close {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+    font-size: 1.125rem !important;
+  }
+
+  /* Détail recette en paysage */
+  .detail-recette-modal {
+    max-height: 90vh !important;
+    padding: 1rem !important;
+  }
+
+  .detail-header {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .detail-titre {
+    font-size: 1.125rem !important;
+  }
+
+  .detail-section {
+    margin-bottom: 1rem !important;
+  }
+
+  .detail-section-titre {
+    font-size: 0.875rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Plan hebdo en paysage */
+  .plan-hebdo {
+    padding: 0.5rem !important;
+  }
+
+  .grid-header,
+  .grid-row {
+    font-size: 0.75rem !important;
+  }
+
+  .meal-card {
+    padding: 0.5rem !important;
+    min-height: 80px !important;
+  }
+
+  .meal-card h4 {
+    font-size: 0.8rem !important;
+  }
+
+  /* Recherche page en paysage */
+  .page-header {
+    padding: 1rem !important;
+  }
+
+  .page-header h1 {
+    font-size: 1.25rem !important;
+  }
+
+  .filtres-section {
+    padding: 0.75rem !important;
+  }
+
+  .recette-card {
+    padding: 0.75rem !important;
+  }
+
+  /* Ajuster le padding du body pour la nav en paysage */
+  body {
+    padding-bottom: calc(50px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  /* App main en paysage */
+  .app-main {
+    padding: 0.5rem !important;
+    padding-bottom: calc(50px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+}
+
+/* ====================================
+   TABLETTES (iPad, etc.)
+   ==================================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app-main {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .plan-section,
+  .shopping-section,
+  .recherche-section {
+    padding: 1.5rem;
+  }
+
+  .resultats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ====================================
+   GRANDS ÉCRANS (Desktop > 1600px)
+   ==================================== */
+@media (min-width: 1600px) {
+  .app-main {
+    max-width: 1800px;
+  }
+
+  .resultats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ====================================
+   PETITS TÉLÉPHONES (< 375px)
+   ==================================== */
+@media (max-width: 374px) {
+  .app-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .app-header .subtitle {
+    font-size: 0.75rem;
+  }
+
+  .btn-generate,
+  .btn-reset {
+    font-size: 0.75rem;
+    padding: 0.625rem 1rem;
+  }
+
+  .nav-link {
+    min-width: 70px;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .nav-label {
+    font-size: 0.65rem;
+  }
+
+  .meal-card {
+    padding: 0.625rem;
+  }
+
+  .recette-card {
+    padding: 0.875rem;
+  }
+}
+
+/* ====================================
+   HAUTEUR RÉDUITE (Mode paysage compact)
+   ==================================== */
+@media (max-height: 600px) {
+  /* Modales adaptées pour petites hauteurs */
+  .modal-content,
+  .detail-recette-modal {
+    max-height: 95vh !important;
+    padding: 0.75rem !important;
+  }
+
+  .modal-header,
+  .detail-header {
+    padding-bottom: 0.375rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .modal-body,
+  .detail-content {
+    flex: 1;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Sections plus compactes */
+  .detail-section {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .ingredient-item,
+  .etape-preparation {
+    padding: 0.375rem !important;
+  }
+}
+
+/* ====================================
+   SUPPORT NOTCH/SAFE AREAS iOS
+   ==================================== */
+@supports (padding: max(0px)) {
+  .app-header {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+
+  .navigation {
+    padding-left: max(0.5rem, env(safe-area-inset-left));
+    padding-right: max(0.5rem, env(safe-area-inset-right));
+  }
+
+  .app-main {
+    padding-left: max(0.625rem, env(safe-area-inset-left));
+    padding-right: max(0.625rem, env(safe-area-inset-right));
+  }
+
+  @media (orientation: landscape) {
+    .app-main {
+      padding-left: max(1rem, env(safe-area-inset-left));
+      padding-right: max(1rem, env(safe-area-inset-right));
+    }
+  }
+}
+
+/* ====================================
+   SCROLLING AMÉLIORÉ
+   ==================================== */
+@media (max-width: 768px) {
+  /* Scroll fluide sur tous les conteneurs */
+  .modal-body,
+  .detail-content,
+  .shopping-section,
+  .page-container {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+  }
+
+  /* Éviter le rubber-band effect sur iOS */
+  .modal-overlay,
+  .detail-recette-overlay {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/* ====================================
+   ACCESSIBILITÉ TACTILE
+   ==================================== */
+@media (hover: none) and (pointer: coarse) {
+  /* Augmenter toutes les zones tactiles sur mobile */
+  button,
+  .nav-link,
+  .recette-card,
+  .tag-filtre,
+  .ingredient-checkbox,
+  .btn-portion,
+  .btn-close {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Feedback tactile amélioré */
+  button:active,
+  .nav-link:active,
+  .recette-card:active {
+    transform: scale(0.97);
+    transition: transform 0.1s;
+  }
+}
+
+/* ====================================
+   DARK MODE (Préférence système)
+   ==================================== */
+@media (prefers-color-scheme: dark) {
+  /* Note: À implémenter si souhaité */
+  /* Pour l'instant, l'app reste en light mode */
+}
+
+/* ====================================
+   REDUCED MOTION (Accessibilité)
+   ==================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ====================================
+   FIX: Empêcher le zoom sur focus input (iOS)
+   ==================================== */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="search"],
+  input[type="range"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}

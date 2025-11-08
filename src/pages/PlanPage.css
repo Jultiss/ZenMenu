@@ -1,0 +1,284 @@
+/* Styles pour la page Plan */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-action {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #4338ca, #6366f1);
+  color: white;
+  box-shadow: 0 4px 12px rgba(67, 56, 202, 0.3);
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(67, 56, 202, 0.4);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #64748b, #94a3b8);
+  color: white;
+  box-shadow: 0 4px 12px rgba(100, 116, 139, 0.3);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(100, 116, 139, 0.4);
+}
+
+.btn-print {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  color: white;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-print:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
+}
+
+/* Styles d'impression */
+@media print {
+  /* Format A4 paysage - DOIT être en premier */
+  @page {
+    size: A4 landscape;
+    margin: 0.8cm 1cm;
+  }
+
+  /* Cacher TOUS les éléments non nécessaires */
+  body > *:not(.app) {
+    display: none !important;
+  }
+
+  .app-header,
+  .header-actions,
+  .btn-action,
+  nav,
+  .btn-change,
+  .btn-portion,
+  .btn-day-action,
+  .meal-empty,
+  .add-icon,
+  .portions-control,
+  .meal-actions,
+  footer {
+    display: none !important;
+  }
+
+  /* Forcer les couleurs à s'imprimer */
+  * {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  .app {
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: auto !important;
+  }
+
+  .page-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .page-header {
+    margin: 0 0 0.5rem 0 !important;
+    padding: 0 !important;
+  }
+
+  .page-header h1 {
+    font-size: 1.3rem !important;
+    margin: 0 0 0.5rem 0 !important;
+    text-align: center !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+  }
+
+  /* Conteneur du plan */
+  .plan-hebdo {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Grille du plan - optimisée pour tenir sur 1 page */
+  .plan-grid {
+    font-size: 0.65rem !important;
+    gap: 0 !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .grid-header {
+    display: grid !important;
+    grid-template-columns: 90px repeat(4, 1fr) !important;
+    gap: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .grid-row {
+    display: grid !important;
+    grid-template-columns: 90px repeat(4, 1fr) !important;
+    gap: 0 !important;
+    margin-bottom: 0 !important;
+    page-break-inside: avoid !important;
+  }
+
+  .cell {
+    padding: 0.3rem 0.25rem !important;
+    min-height: auto !important;
+    height: auto !important;
+    border: 1px solid #333 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Cellule du jour */
+  .day-cell {
+    background-color: #10b981 !important;
+    color: white !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    padding: 0.3rem 0.2rem !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    text-align: center !important;
+  }
+
+  .day-name {
+    font-size: 0.75rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .day-actions {
+    display: none !important;
+  }
+
+  /* En-tête des colonnes */
+  .header-cell {
+    background-color: #4338ca !important;
+    color: white !important;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    padding: 0.3rem 0.25rem !important;
+    text-align: center !important;
+  }
+
+  /* Cellules des repas */
+  .meal-cell {
+    background-color: white !important;
+    border: 1px solid #333 !important;
+    padding: 0.25rem !important;
+    cursor: default !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .meal-content {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.15rem !important;
+  }
+
+  .meal-name {
+    font-size: 0.65rem !important;
+    line-height: 1.1 !important;
+    font-weight: 600 !important;
+    color: #000 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+
+  .portions-display {
+    font-size: 0.55rem !important;
+    color: #666 !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+  }
+
+  /* Masquer tout ce qui n'est pas nécessaire */
+  .meal-cell:hover,
+  .recette-item:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .header-actions {
+    justify-content: center;
+  }
+
+  .btn-action {
+    flex: 1;
+    min-width: 120px;
+  }
+}

@@ -1,0 +1,352 @@
+.recherche-ingredients {
+  background: white;
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Header */
+.recherche-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.recherche-header h2 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.recherche-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Formulaire */
+.recherche-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.input-recherche {
+  flex: 1;
+  min-width: 250px;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: all 0.2s;
+  /* Éviter le zoom automatique iOS */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.input-recherche:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.input-recherche::placeholder {
+  color: #9ca3af;
+}
+
+.btn-rechercher {
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: var(--shadow-md);
+  flex-shrink: 0;
+}
+
+.btn-rechercher:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-reinitialiser {
+  padding: 0.625rem 1.25rem;
+  background-color: #f3f4f6;
+  color: var(--text-primary);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  align-self: center;
+}
+
+.btn-reinitialiser:hover {
+  background-color: #e5e7eb;
+}
+
+/* Résultats */
+.resultats-recherche {
+  margin-top: 2rem;
+}
+
+.resultats-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(16, 185, 129, 0.05));
+  border-radius: var(--radius);
+}
+
+.resultats-header h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.resultats-info {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.resultats-info strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.aucun-resultat {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--text-secondary);
+}
+
+.aucun-resultat p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.suggestion {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Catégories de résultats */
+.resultats-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.categorie-resultats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.categorie-nom {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* Grille de recettes */
+.recettes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.recette-card {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.3s;
+}
+
+.recette-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.recette-card-header {
+  border-bottom: 2px solid #f3f4f6;
+  padding-bottom: 0.75rem;
+}
+
+.recette-nom {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.recette-ingredients {
+  flex: 1;
+}
+
+.ingredients-titre {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.ingredients-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ingredient-item {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.ingredient-item::before {
+  content: '•';
+  position: absolute;
+  left: 0.5rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.ingredient-item .quantite {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.btn-ajouter-recette {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-ajouter-recette:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recherche-ingredients {
+    padding: 1.25rem;
+  }
+
+  .recherche-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .recherche-header h2 {
+    font-size: 1.375rem;
+  }
+
+  .recherche-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .recherche-form {
+    gap: 0.875rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .input-recherche {
+    width: 100%;
+    min-width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    min-height: 50px;
+  }
+
+  .btn-rechercher {
+    width: 100%;
+    padding: 1rem 2rem;
+    min-height: 50px;
+  }
+
+  .btn-reinitialiser {
+    padding: 0.75rem 1.5rem;
+    min-height: 44px;
+  }
+
+  .resultats-header {
+    padding: 1.25rem;
+  }
+
+  .resultats-header h3 {
+    font-size: 1.125rem;
+  }
+
+  .resultats-info {
+    font-size: 0.875rem;
+  }
+
+  .resultats-categories {
+    gap: 2rem;
+  }
+
+  .categorie-nom {
+    font-size: 1.125rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .recettes-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .recette-card {
+    padding: 1.25rem;
+  }
+
+  .recette-nom {
+    font-size: 1rem;
+  }
+
+  .ingredients-liste {
+    gap: 0.625rem;
+  }
+
+  .ingredient-item {
+    font-size: 0.875rem;
+  }
+
+  .btn-ajouter-recette {
+    padding: 0.875rem;
+    min-height: 48px;
+    font-size: 0.95rem;
+  }
+
+  .aucun-resultat {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .aucun-resultat p {
+    font-size: 1rem;
+  }
+}

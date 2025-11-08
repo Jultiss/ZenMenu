@@ -1,0 +1,448 @@
+.plan-hebdo h2 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.plan-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.grid-header,
+.grid-row {
+  display: grid;
+  grid-template-columns: 120px repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.cell {
+  padding: 1rem;
+  border-radius: var(--radius);
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-cell {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.meal-cell {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.meal-cell:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.meal-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meal-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-align: center;
+  line-height: 1.3;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.meal-name:hover {
+  background-color: rgba(99, 102, 241, 0.05);
+}
+
+.meal-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.portions-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  background: rgba(99, 102, 241, 0.05);
+  border-radius: calc(var(--radius) / 2);
+}
+
+.btn-portion {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  padding: 0;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.btn-portion:hover:not(:disabled) {
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+.btn-portion:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.portions-display {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  min-width: 70px;
+  text-align: center;
+}
+
+.day-cell {
+  background-color: var(--secondary-color);
+  font-weight: 700;
+  color: white;
+  font-size: 0.9rem;
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.25rem;
+}
+
+.day-name {
+  text-align: center;
+}
+
+.day-actions {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-day-action {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  padding: 0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+  flex-shrink: 0;
+}
+
+.btn-clear {
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+}
+
+.btn-clear:hover {
+  background: rgba(239, 68, 68, 0.2);
+  transform: scale(1.05);
+}
+
+.btn-change {
+  padding: 0.35rem 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: calc(var(--radius) / 2);
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.meal-cell:hover .btn-change {
+  opacity: 1;
+}
+
+.meal-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.add-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid-header,
+  .grid-row {
+    grid-template-columns: 100px repeat(4, 1fr);
+  }
+
+  .cell {
+    padding: 0.75rem;
+    min-height: 80px;
+  }
+
+  .meal-name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .plan-hebdo {
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .plan-hebdo h2 {
+    font-size: 1.125rem;
+    padding: 0 0 0.75rem;
+    text-align: left;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    color: var(--text-primary);
+  }
+
+  /* Layout vertical par jour sur mobile */
+  .plan-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .grid-header {
+    display: none; /* Masquer l'en-tête sur mobile */
+  }
+
+  .grid-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: white;
+    padding: 0.625rem;
+    padding-top: 0.875rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+
+  .day-cell {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    padding: 0.5rem 0.75rem;
+    background: linear-gradient(135deg, rgba(67, 56, 202, 0.08), rgba(16, 185, 129, 0.08));
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .meal-cell {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 0.75rem;
+    padding-top: 1rem;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    position: relative;
+    min-height: auto;
+    height: auto;
+    overflow: visible;
+    transition: all 0.2s;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .meal-cell:active {
+    transform: scale(0.99);
+    background: #f5f5f5;
+  }
+
+  /* Étiquette de type de repas moderne */
+  .meal-cell::before {
+    content: attr(data-meal-type);
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    background: linear-gradient(135deg, #4338ca, #10b981);
+    color: white;
+    padding: 0.25rem 0.625rem;
+    border-radius: 6px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(67, 56, 202, 0.3);
+    z-index: 1;
+  }
+
+  .meal-content {
+    padding-top: 0;
+    gap: 0.625rem;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    min-width: 0;
+  }
+
+  .meal-name {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    margin-bottom: 0.625rem;
+    padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    min-height: auto;
+    font-weight: 600;
+    color: var(--text-primary);
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .meal-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.375rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    flex-wrap: nowrap;
+  }
+
+  .portions-control {
+    padding: 0.25rem 0.375rem;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .portions-display {
+    font-size: 0.75rem;
+    min-width: 60px;
+    max-width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .btn-portion {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 4px rgba(67, 56, 202, 0.15);
+    flex-shrink: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  .btn-change {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.625rem;
+    border-radius: 6px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    flex-shrink: 0;
+    min-width: 60px;
+    max-width: 65px;
+  }
+
+  .meal-empty {
+    padding: 1.5rem;
+    gap: 0.75rem;
+    min-height: 80px;
+  }
+
+  .add-icon {
+    font-size: 2rem;
+  }
+
+  .meal-empty span:last-child {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .day-cell {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .day-name {
+    font-size: 0.85rem;
+    font-weight: 800;
+  }
+
+  .day-actions {
+    gap: 0.375rem;
+  }
+
+  .btn-day-action {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,3242 @@
+[
+  {
+    "type": "petits_dejeuner",
+    "id": "PE001",
+    "nom": "Porridge onctueux à la banane et cannelle",
+    "ingredients": [
+      {
+        "nom": "Flocons d'avoine",
+        "quantite": "50 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait d'amande",
+        "quantite": "250 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Banane mûre",
+        "quantite": "1 moyenne",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Cannelle douce",
+        "quantite": "1 pincée",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Faire chauffer le lait d'amande dans une casserole. Ajouter les flocons d'avoine et cuire à feu doux 5-7 minutes en remuant. Écraser la banane et l'incorporer. Saupoudrer de cannelle avant de servir.",
+    "calories": 320,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE002",
+    "nom": "Tartines de pain complet à la purée d'amande",
+    "ingredients": [
+      {
+        "nom": "Pain complet",
+        "quantite": "2 tranches (60 g)",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Purée d'amande",
+        "quantite": "20 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Poire",
+        "quantite": "1 petite",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Miel d'acacia",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Faire griller légèrement le pain complet. Tartiner de purée d'amande. Couper la poire en fines lamelles et disposer sur les tartines. Arroser d'un filet de miel.",
+    "calories": 385,
+    "compatibilite": [
+      "Sans lactose",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE003",
+    "nom": "Smoothie bowl pomme-poire à l'avoine",
+    "ingredients": [
+      {
+        "nom": "Pomme Golden",
+        "quantite": "1 moyenne",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Poire Williams",
+        "quantite": "1 moyenne",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Flocons d'avoine",
+        "quantite": "30 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait de riz",
+        "quantite": "150 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Graines de chia",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Mixer la pomme et la poire épluchées avec le lait de riz et les flocons d'avoine jusqu'à obtenir une consistance lisse. Verser dans un bol et parsemer de graines de chia. Laisser reposer 5 minutes.",
+    "calories": 295,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE004",
+    "nom": "Yaourt de soja aux myrtilles et graines de lin",
+    "ingredients": [
+      {
+        "nom": "Yaourt au soja nature",
+        "quantite": "200 g",
+        "rayon": "Produits frais"
+      },
+      {
+        "nom": "Myrtilles fraîches",
+        "quantite": "80 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Graines de lin moulues",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Sirop d'érable",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Verser le yaourt dans un bol. Ajouter les myrtilles lavées. Saupoudrer de graines de lin moulues. Arroser délicatement de sirop d'érable et mélanger avant de déguster.",
+    "calories": 240,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE005",
+    "nom": "Crêpes de sarrasin à la compote de pommes",
+    "ingredients": [
+      {
+        "nom": "Farine de sarrasin",
+        "quantite": "60 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait d'avoine",
+        "quantite": "120 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Œuf",
+        "quantite": "1",
+        "rayon": "Produits frais"
+      },
+      {
+        "nom": "Compote de pommes sans sucre",
+        "quantite": "100 g",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Mélanger la farine, l'œuf et le lait pour obtenir une pâte lisse. Faire cuire 2-3 crêpes fines dans une poêle antiadhésive sans matière grasse. Servir tièdes avec la compote de pommes.",
+    "calories": 340,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE006",
+    "nom": "Muesli maison au lait d'amande",
+    "ingredients": [
+      {
+        "nom": "Flocons d'avoine",
+        "quantite": "40 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Amandes effilées",
+        "quantite": "15 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Raisins secs",
+        "quantite": "20 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait d'amande",
+        "quantite": "250 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Banane",
+        "quantite": "1/2",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Mélanger les flocons d'avoine, les amandes et les raisins secs dans un bol. Verser le lait d'amande. Ajouter la banane coupée en rondelles. Laisser reposer 3 minutes avant de déguster.",
+    "calories": 380,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE007",
+    "nom": "Riz au lait d'amande à la vanille",
+    "ingredients": [
+      {
+        "nom": "Riz rond",
+        "quantite": "50 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait d'amande vanillé",
+        "quantite": "300 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Extrait de vanille",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sucrée"
+      },
+      {
+        "nom": "Miel",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Cuire le riz dans le lait d'amande à feu doux pendant 25-30 minutes en remuant régulièrement. Ajouter l'extrait de vanille et le miel. Servir tiède ou froid.",
+    "calories": 310,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE008",
+    "nom": "Galettes de riz soufflé aux fruits rouges",
+    "ingredients": [
+      {
+        "nom": "Galettes de riz nature",
+        "quantite": "3",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Fromage frais 0%",
+        "quantite": "60 g",
+        "rayon": "Produits frais"
+      },
+      {
+        "nom": "Framboises",
+        "quantite": "50 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Mûres",
+        "quantite": "30 g",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Tartiner chaque galette de riz de fromage frais. Disposer harmonieusement les framboises et mûres sur le dessus. Déguster immédiatement.",
+    "calories": 220,
+    "compatibilite": [
+      "Sans gluten",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE009",
+    "nom": "Bouillie de millet aux pruneaux",
+    "ingredients": [
+      {
+        "nom": "Millet",
+        "quantite": "50 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait de coco léger",
+        "quantite": "250 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Pruneaux dénoyautés",
+        "quantite": "4",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Cannelle",
+        "quantite": "1/2 c. à café",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Rincer le millet. Le cuire dans le lait de coco pendant 15-20 minutes. Couper les pruneaux en morceaux et les ajouter 5 minutes avant la fin. Saupoudrer de cannelle.",
+    "calories": 350,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE010",
+    "nom": "Toast d'avocat sur pain aux graines",
+    "ingredients": [
+      {
+        "nom": "Pain aux graines",
+        "quantite": "2 tranches",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Avocat mûr",
+        "quantite": "1/2",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Graines de courge",
+        "quantite": "10 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Sel rose de l'Himalaya",
+        "quantite": "1 pincée",
+        "rayon": "Condiments & huiles"
+      }
+    ],
+    "preparation": "Toaster le pain. Écraser l'avocat à la fourchette avec une pincée de sel. Tartiner généreusement sur le pain. Parsemer de graines de courge légèrement concassées.",
+    "calories": 360,
+    "compatibilite": [
+      "Sans lactose",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE011",
+    "nom": "Quinoa soufflé au lait végétal et pêche",
+    "ingredients": [
+      {
+        "nom": "Quinoa soufflé",
+        "quantite": "40 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait d'avoine",
+        "quantite": "200 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Pêche mûre",
+        "quantite": "1",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Graines de tournesol",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Verser le quinoa soufflé dans un bol. Ajouter le lait d'avoine. Couper la pêche en dés et l'ajouter. Parsemer de graines de tournesol.",
+    "calories": 290,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE012",
+    "nom": "Pancakes à la banane sans farine",
+    "ingredients": [
+      {
+        "nom": "Bananes très mûres",
+        "quantite": "2",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Œufs",
+        "quantite": "2",
+        "rayon": "Produits frais"
+      },
+      {
+        "nom": "Flocons d'avoine mixés",
+        "quantite": "30 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Myrtilles",
+        "quantite": "50 g",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Écraser les bananes. Battre avec les œufs et l'avoine mixée. Faire cuire en petits pancakes dans une poêle antiadhésive. Servir avec les myrtilles fraîches.",
+    "calories": 340,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE013",
+    "nom": "Fromage blanc aux abricots et amandes",
+    "ingredients": [
+      {
+        "nom": "Fromage blanc 0%",
+        "quantite": "200 g",
+        "rayon": "Produits frais"
+      },
+      {
+        "nom": "Abricots frais",
+        "quantite": "3",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Amandes effilées",
+        "quantite": "15 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Sirop d'agave",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Verser le fromage blanc dans un bol. Couper les abricots en quartiers et les disposer sur le fromage. Parsemer d'amandes effilées. Arroser de sirop d'agave.",
+    "calories": 270,
+    "compatibilite": [
+      "Sans gluten",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE014",
+    "nom": "Semoule au lait de riz et raisins secs",
+    "ingredients": [
+      {
+        "nom": "Semoule fine",
+        "quantite": "40 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait de riz",
+        "quantite": "300 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Raisins secs",
+        "quantite": "25 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Cardamome moulue",
+        "quantite": "1 pincée",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Porter le lait de riz à ébullition. Verser la semoule en pluie en remuant. Cuire 3-4 minutes. Ajouter les raisins et la cardamome. Laisser gonfler hors du feu.",
+    "calories": 300,
+    "compatibilite": [
+      "Sans lactose",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE015",
+    "nom": "Chia pudding au lait d'amande et mangue",
+    "ingredients": [
+      {
+        "nom": "Graines de chia",
+        "quantite": "30 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait d'amande",
+        "quantite": "250 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Mangue",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Miel",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Mélanger les graines de chia avec le lait d'amande et le miel. Laisser au frais toute la nuit. Le matin, ajouter la mangue coupée en dés. Mélanger et déguster.",
+    "calories": 280,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE016",
+    "nom": "Pain d'épeautre grillé au houmous léger",
+    "ingredients": [
+      {
+        "nom": "Pain d'épeautre",
+        "quantite": "2 tranches",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Houmous nature",
+        "quantite": "50 g",
+        "rayon": "Produits frais"
+      },
+      {
+        "nom": "Concombre",
+        "quantite": "1/4",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Graines de sésame",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Faire griller le pain d'épeautre. Tartiner généreusement de houmous. Ajouter des tranches fines de concombre. Parsemer de graines de sésame.",
+    "calories": 310,
+    "compatibilite": [
+      "Sans lactose",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE017",
+    "nom": "Œufs brouillés au lait d'amande",
+    "ingredients": [
+      {
+        "nom": "Œufs",
+        "quantite": "2",
+        "rayon": "Produits frais"
+      },
+      {
+        "nom": "Lait d'amande",
+        "quantite": "50 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Pain de seigle",
+        "quantite": "2 tranches",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Ciboulette fraîche",
+        "quantite": "5 brins",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Battre les œufs avec le lait d'amande. Cuire à feu doux dans une poêle antiadhésive en remuant doucement. Servir sur le pain de seigle toasté. Parsemer de ciboulette ciselée.",
+    "calories": 330,
+    "compatibilite": [
+      "Sans lactose",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE018",
+    "nom": "Smoothie vert doux aux épinards et pomme",
+    "ingredients": [
+      {
+        "nom": "Épinards frais",
+        "quantite": "50 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Pomme Granny Smith",
+        "quantite": "1",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Banane",
+        "quantite": "1",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Lait d'amande",
+        "quantite": "200 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Graines de lin",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Mixer tous les ingrédients ensemble jusqu'à obtenir une consistance bien lisse et crémeuse. Servir immédiatement dans un grand verre.",
+    "calories": 280,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE019",
+    "nom": "Polenta crémeuse sucrée aux figues",
+    "ingredients": [
+      {
+        "nom": "Polenta instantanée",
+        "quantite": "50 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait d'avoine",
+        "quantite": "300 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Figues fraîches",
+        "quantite": "3",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Sirop d'érable",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Cuire la polenta dans le lait d'avoine selon les instructions. Ajouter le sirop d'érable. Servir avec les figues coupées en quartiers.",
+    "calories": 340,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE020",
+    "nom": "Granola maison aux noisettes",
+    "ingredients": [
+      {
+        "nom": "Flocons d'avoine",
+        "quantite": "50 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Noisettes concassées",
+        "quantite": "20 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Miel",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sucrée"
+      },
+      {
+        "nom": "Yaourt végétal",
+        "quantite": "150 g",
+        "rayon": "Produits frais"
+      },
+      {
+        "nom": "Kiwi",
+        "quantite": "1",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Mélanger l'avoine, les noisettes et le miel. Étaler sur une plaque et faire dorer 15 min au four à 150°C. Laisser refroidir. Servir sur le yaourt avec le kiwi en rondelles.",
+    "calories": 400,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE021",
+    "nom": "Tapioca au lait de coco et ananas",
+    "ingredients": [
+      {
+        "nom": "Perles de tapioca",
+        "quantite": "40 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait de coco léger",
+        "quantite": "250 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Ananas frais",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Sirop d'agave",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Cuire le tapioca dans le lait de coco selon les instructions du paquet. Laisser tiédir. Ajouter l'ananas coupé en petits morceaux et le sirop d'agave.",
+    "calories": 290,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE022",
+    "nom": "Biscuits d'avoine aux dattes",
+    "ingredients": [
+      {
+        "nom": "Flocons d'avoine",
+        "quantite": "60 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Dattes dénoyautées",
+        "quantite": "50 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Purée d'amande",
+        "quantite": "15 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait d'amande",
+        "quantite": "100 ml",
+        "rayon": "Produits végétaux"
+      }
+    ],
+    "preparation": "Mixer les dattes avec le lait. Mélanger avec l'avoine et la purée d'amande. Former 4 biscuits. Cuire 15 min à 180°C. Servir avec une infusion.",
+    "calories": 350,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE023",
+    "nom": "Œuf poché sur lit d'épinards",
+    "ingredients": [
+      {
+        "nom": "Œuf",
+        "quantite": "1",
+        "rayon": "Produits frais"
+      },
+      {
+        "nom": "Épinards frais",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Pain de mie complet",
+        "quantite": "2 tranches",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Huile d'olive",
+        "quantite": "1 c. à café",
+        "rayon": "Condiments & huiles"
+      }
+    ],
+    "preparation": "Faire revenir les épinards à la vapeur. Pocher l'œuf dans de l'eau frémissante. Toaster le pain. Disposer les épinards sur le pain, l'œuf dessus. Filet d'huile d'olive.",
+    "calories": 280,
+    "compatibilite": [
+      "Sans lactose",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE024",
+    "nom": "Compote de pommes maison aux flocons d'avoine",
+    "ingredients": [
+      {
+        "nom": "Pommes",
+        "quantite": "2",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Flocons d'avoine",
+        "quantite": "30 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Cannelle",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Noix de pécan",
+        "quantite": "15 g",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Cuire les pommes en morceaux avec un peu d'eau et la cannelle. Écraser en compote. Servir tiède avec les flocons d'avoine et les noix concassées.",
+    "calories": 310,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE025",
+    "nom": "Baies d'açaï bowl aux graines",
+    "ingredients": [
+      {
+        "nom": "Purée d'açaï congelée",
+        "quantite": "100 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Banane",
+        "quantite": "1",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Lait d'amande",
+        "quantite": "100 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Graines de courge",
+        "quantite": "15 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Flocons de coco",
+        "quantite": "10 g",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Mixer l'açaï avec la banane et le lait jusqu'à consistance épaisse. Verser dans un bol. Parsemer de graines de courge et de flocons de coco.",
+    "calories": 320,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE026",
+    "nom": "Tartine de pain intégral au beurre de cajou",
+    "ingredients": [
+      {
+        "nom": "Pain intégral",
+        "quantite": "2 tranches",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Beurre de cajou",
+        "quantite": "20 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Pomme",
+        "quantite": "1/2",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Cannelle",
+        "quantite": "1 pincée",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Toaster le pain intégral. Tartiner généreusement de beurre de cajou. Ajouter des tranches fines de pomme. Saupoudrer de cannelle.",
+    "calories": 340,
+    "compatibilite": [
+      "Sans lactose",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE027",
+    "nom": "Porridge de quinoa à la poire",
+    "ingredients": [
+      {
+        "nom": "Quinoa",
+        "quantite": "50 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait d'avoine",
+        "quantite": "300 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Poire",
+        "quantite": "1",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Vanille en poudre",
+        "quantite": "1/2 c. à café",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Rincer le quinoa. Le cuire dans le lait d'avoine 15 minutes. Ajouter la vanille. Servir avec la poire coupée en dés.",
+    "calories": 330,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE028",
+    "nom": "Pudding de pain perdu aux raisins",
+    "ingredients": [
+      {
+        "nom": "Pain rassis complet",
+        "quantite": "60 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Lait d'amande",
+        "quantite": "200 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Œuf",
+        "quantite": "1",
+        "rayon": "Produits frais"
+      },
+      {
+        "nom": "Raisins secs",
+        "quantite": "30 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Miel",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Couper le pain en cubes. Battre l'œuf avec le lait et le miel. Ajouter le pain et les raisins. Laisser imbiber 10 min. Cuire 20 min au four à 180°C.",
+    "calories": 370,
+    "compatibilite": [
+      "Sans lactose",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE029",
+    "nom": "Smoothie melon concombre rafraîchissant",
+    "ingredients": [
+      {
+        "nom": "Melon",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Concombre",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Lait d'amande",
+        "quantite": "100 ml",
+        "rayon": "Produits végétaux"
+      },
+      {
+        "nom": "Graines de chia",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Mixer le melon et le concombre épluchés avec le lait d'amande jusqu'à consistance lisse. Ajouter les graines de chia. Laisser reposer 5 minutes.",
+    "calories": 210,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Vegan",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "petits_dejeuner",
+    "id": "PE030",
+    "nom": "Muffin maison à la carotte et noix",
+    "ingredients": [
+      {
+        "nom": "Farine d'épeautre",
+        "quantite": "60 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Carotte râpée",
+        "quantite": "50 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Noix concassées",
+        "quantite": "15 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Œuf",
+        "quantite": "1",
+        "rayon": "Produits frais"
+      },
+      {
+        "nom": "Miel",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Mélanger tous les ingrédients. Verser dans 2 moules à muffins. Cuire 20 minutes à 180°C. Servir tiède.",
+    "calories": 340,
+    "compatibilite": [
+      "Sans lactose",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE031",
+    "nom": "Filet de cabillaud vapeur, riz basmati et carottes glacées",
+    "ingredients": [
+      {
+        "nom": "Cabillaud",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Riz basmati",
+        "quantite": "80 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Carottes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Huile d'olive",
+        "quantite": "1 c. à café",
+        "rayon": "Condiments & huiles"
+      },
+      {
+        "nom": "Persil frais",
+        "quantite": "5 brins",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Cuire le cabillaud à la vapeur 12 minutes. Préparer le riz basmati. Cuire les carottes à la vapeur puis les glacer légèrement avec l'huile d'olive. Parsemer de persil ciselé.",
+    "calories": 420,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE032",
+    "nom": "Blanc de poulet rôti, purée de patate douce et haricots verts",
+    "ingredients": [
+      {
+        "nom": "Blanc de poulet",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Patate douce",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Haricots verts",
+        "quantite": "150 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Huile de colza",
+        "quantite": "1 c. à café",
+        "rayon": "Condiments & huiles"
+      }
+    ],
+    "preparation": "Rôtir le poulet au four sans matière grasse. Cuire la patate douce et la réduire en purée avec l'huile. Cuire les haricots verts à la vapeur. Servir l'ensemble harmonieusement.",
+    "calories": 450,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE033",
+    "nom": "Filet de truite au four, quinoa et brocoli vapeur",
+    "ingredients": [
+      {
+        "nom": "Truite",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Quinoa",
+        "quantite": "70 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Brocoli",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Jus de citron",
+        "quantite": "1 c. à soupe",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Cuire la truite au four avec un filet de citron pendant 15 minutes. Préparer le quinoa. Cuire le brocoli à la vapeur. Assembler dans l'assiette.",
+    "calories": 480,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE034",
+    "nom": "Dinde sautée, riz complet et courgettes à la vapeur",
+    "ingredients": [
+      {
+        "nom": "Escalope de dinde",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Riz complet",
+        "quantite": "80 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Courgettes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Thym séché",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Couper la dinde en lanières et la faire revenir dans une poêle antiadhésive. Cuire le riz complet. Préparer les courgettes à la vapeur. Assaisonner de thym.",
+    "calories": 460,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE035",
+    "nom": "Papillote de colin, fenouil braisé et pommes vapeur",
+    "ingredients": [
+      {
+        "nom": "Colin",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Fenouil",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Pommes de terre",
+        "quantite": "150 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Aneth frais",
+        "quantite": "3 brins",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Préparer le colin en papillote avec l'aneth. Cuire 20 min au four. Braiser le fenouil émincé. Cuire les pommes de terre à la vapeur. Servir ensemble.",
+    "calories": 390,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE036",
+    "nom": "Poulet au four, pâtes complètes et épinards sautés",
+    "ingredients": [
+      {
+        "nom": "Blanc de poulet",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Pâtes complètes",
+        "quantite": "80 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Épinards frais",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Huile d'olive",
+        "quantite": "1 c. à café",
+        "rayon": "Condiments & huiles"
+      }
+    ],
+    "preparation": "Cuire le poulet au four assaisonné d'herbes. Préparer les pâtes al dente. Faire sauter rapidement les épinards avec l'huile d'olive. Assembler.",
+    "calories": 490,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE037",
+    "nom": "Filet de daurade, semoule et ratatouille douce",
+    "ingredients": [
+      {
+        "nom": "Daurade",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Semoule de blé",
+        "quantite": "70 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Courgette",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Aubergine",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Basilic frais",
+        "quantite": "5 feuilles",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Griller la daurade au four. Préparer la semoule. Cuire courgettes et aubergines à la vapeur puis mélanger avec le basilic. Servir chaud.",
+    "calories": 440,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE038",
+    "nom": "Escalope de veau, purée de céleri-rave et carottes",
+    "ingredients": [
+      {
+        "nom": "Escalope de veau",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Céleri-rave",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Carottes",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Lait d'amande",
+        "quantite": "50 ml",
+        "rayon": "Produits végétaux"
+      }
+    ],
+    "preparation": "Cuire le veau à la poêle sans matière grasse. Préparer une purée de céleri-rave avec le lait d'amande. Cuire les carottes vapeur. Disposer harmonieusement.",
+    "calories": 410,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE039",
+    "nom": "Saumon cuit vapeur, riz sauvage et asperges vertes",
+    "ingredients": [
+      {
+        "nom": "Saumon",
+        "quantite": "130 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Riz sauvage",
+        "quantite": "70 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Asperges vertes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Ciboulette",
+        "quantite": "5 brins",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Cuire le saumon à la vapeur douce. Préparer le riz sauvage. Cuire les asperges à la vapeur. Parsemer de ciboulette ciselée. Servir tiède.",
+    "calories": 500,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE040",
+    "nom": "Poulet grillé, lentilles vertes et carottes râpées",
+    "ingredients": [
+      {
+        "nom": "Blanc de poulet",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Lentilles vertes",
+        "quantite": "60 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Carottes",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Huile de noix",
+        "quantite": "1 c. à café",
+        "rayon": "Condiments & huiles"
+      }
+    ],
+    "preparation": "Griller le poulet au four. Cuire les lentilles vertes. Râper les carottes crues et les assaisonner avec l'huile de noix. Assembler l'assiette.",
+    "calories": 470,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE041",
+    "nom": "Lieu noir poché, boulgour et courgettes rondes farcies",
+    "ingredients": [
+      {
+        "nom": "Lieu noir",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Boulgour",
+        "quantite": "70 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Courgettes rondes",
+        "quantite": "2 petites",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Persil plat",
+        "quantite": "1 bouquet",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Pocher le lieu noir dans un court-bouillon. Préparer le boulgour. Évider et farcir les courgettes de boulgour et persil. Cuire au four 25 min.",
+    "calories": 430,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE042",
+    "nom": "Dinde au paprika doux, polenta crémeuse et brocoli",
+    "ingredients": [
+      {
+        "nom": "Filet de dinde",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Polenta",
+        "quantite": "60 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Brocoli",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Paprika doux",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Assaisonner la dinde de paprika doux et la cuire au four. Préparer une polenta crémeuse. Cuire le brocoli vapeur. Servir ensemble.",
+    "calories": 450,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE043",
+    "nom": "Merlan au four, riz thaï et petits pois à la française",
+    "ingredients": [
+      {
+        "nom": "Merlan",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Riz thaï",
+        "quantite": "80 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Petits pois surgelés",
+        "quantite": "150 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Laitue",
+        "quantite": "4 feuilles",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Cuire le merlan au four avec des herbes. Préparer le riz. Cuire les petits pois avec la laitue émincée. Dresser l'assiette.",
+    "calories": 420,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE044",
+    "nom": "Poulet aux herbes, pâtes de riz et légumes du soleil",
+    "ingredients": [
+      {
+        "nom": "Blanc de poulet",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Pâtes de riz",
+        "quantite": "80 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Courgette",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Poivron jaune",
+        "quantite": "1/2",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Herbes de Provence",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Cuire le poulet avec les herbes de Provence. Préparer les pâtes de riz. Faire revenir courgette et poivron à la vapeur. Mélanger et servir.",
+    "calories": 470,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE045",
+    "nom": "Filet de sole meunière légère, pommes vapeur et épinards",
+    "ingredients": [
+      {
+        "nom": "Sole",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Pommes de terre",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Épinards frais",
+        "quantite": "150 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Huile d'olive",
+        "quantite": "1 c. à café",
+        "rayon": "Condiments & huiles"
+      }
+    ],
+    "preparation": "Cuire la sole à la poêle avec très peu d'huile. Cuire les pommes de terre à la vapeur. Faire tomber les épinards rapidement. Dresser l'assiette.",
+    "calories": 410,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE046",
+    "nom": "Dinde rôtie, sarrasin et chou-fleur rôti",
+    "ingredients": [
+      {
+        "nom": "Escalope de dinde",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Sarrasin",
+        "quantite": "70 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Chou-fleur",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Curcuma",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Rôtir la dinde au four. Cuire le sarrasin. Rôtir le chou-fleur en bouquets avec le curcuma au four. Assembler dans l'assiette.",
+    "calories": 460,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE047",
+    "nom": "Bar en papillote, riz basmati et fondue de poireaux",
+    "ingredients": [
+      {
+        "nom": "Bar",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Riz basmati",
+        "quantite": "80 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Poireaux",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Laurier",
+        "quantite": "2 feuilles",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparer le bar en papillote avec le laurier. Cuire 20 min au four. Préparer le riz. Faire une fondue de poireaux à la vapeur. Servir chaud.",
+    "calories": 430,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE048",
+    "nom": "Poulet mariné au citron, couscous complet et légumes grillés",
+    "ingredients": [
+      {
+        "nom": "Blanc de poulet",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Couscous complet",
+        "quantite": "70 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Courgette",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Aubergine",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Citron",
+        "quantite": "1/2",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Mariner le poulet au jus de citron puis le cuire au four. Préparer le couscous. Griller les légumes au four. Assembler l'assiette.",
+    "calories": 480,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE049",
+    "nom": "Cabillaud en croûte d'herbes, quinoa rouge et brocoli",
+    "ingredients": [
+      {
+        "nom": "Cabillaud",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Quinoa rouge",
+        "quantite": "70 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Brocoli",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Persil",
+        "quantite": "1 bouquet",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Chapelure complète",
+        "quantite": "2 c. à soupe",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Enrober le cabillaud de chapelure et persil. Cuire au four. Préparer le quinoa rouge. Cuire le brocoli vapeur. Dresser l'assiette.",
+    "calories": 450,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE050",
+    "nom": "Escalope de dinde panée légère, purée maison et haricots verts",
+    "ingredients": [
+      {
+        "nom": "Escalope de dinde",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Pommes de terre",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Haricots verts",
+        "quantite": "150 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Chapelure",
+        "quantite": "2 c. à soupe",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Paner légèrement la dinde et la cuire au four. Préparer une purée maison. Cuire les haricots verts vapeur. Servir ensemble.",
+    "calories": 460,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE051",
+    "nom": "Truite fumée, pâtes complètes et salade de concombre",
+    "ingredients": [
+      {
+        "nom": "Truite fumée",
+        "quantite": "100 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Pâtes complètes",
+        "quantite": "80 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Concombre",
+        "quantite": "1/2",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Aneth",
+        "quantite": "3 brins",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Cuire les pâtes al dente. Émincer le concombre finement. Émietter la truite fumée. Mélanger le tout avec l'aneth ciselé.",
+    "calories": 420,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE052",
+    "nom": "Poulet au four, riz aux légumes et carottes confites",
+    "ingredients": [
+      {
+        "nom": "Blanc de poulet",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Riz complet",
+        "quantite": "80 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Petits pois",
+        "quantite": "50 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Carottes",
+        "quantite": "150 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Miel",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Rôtir le poulet. Cuire le riz avec les petits pois. Confire les carottes au four avec le miel. Dresser l'assiette harmonieusement.",
+    "calories": 490,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE053",
+    "nom": "Filet de limande, ebly et julienne de légumes",
+    "ingredients": [
+      {
+        "nom": "Limande",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Ebly",
+        "quantite": "80 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Carottes",
+        "quantite": "80 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Courgettes",
+        "quantite": "80 g",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Cuire la limande à la vapeur. Préparer l'ebly. Tailler les légumes en julienne et les cuire vapeur. Assembler dans l'assiette.",
+    "calories": 410,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE054",
+    "nom": "Dinde au curry doux, riz basmati et chou-fleur vapeur",
+    "ingredients": [
+      {
+        "nom": "Filet de dinde",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Riz basmati",
+        "quantite": "80 g cru",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Chou-fleur",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Curry doux",
+        "quantite": "1 c. à café",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Émincer la dinde et la faire revenir avec le curry doux. Cuire le riz basmati. Préparer le chou-fleur vapeur. Servir ensemble.",
+    "calories": 450,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dejeuner",
+    "id": "DE055",
+    "nom": "Rouget au four, polenta et poêlée de légumes",
+    "ingredients": [
+      {
+        "nom": "Rouget",
+        "quantite": "150 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Polenta",
+        "quantite": "60 g",
+        "rayon": "Épicerie sèche"
+      },
+      {
+        "nom": "Courgette",
+        "quantite": "100 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Poivron rouge",
+        "quantite": "1/2",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Cuire le rouget au four 15 minutes. Préparer une polenta crémeuse. Faire revenir courgette et poivron à la vapeur. Dresser l'assiette.",
+    "calories": 440,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI056",
+    "nom": "Velouté de légumes, blanc de poulet et pain complet",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 350,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI057",
+    "nom": "Soupe de carottes, œuf poché et galettes de riz",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 320,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI058",
+    "nom": "Filet de colin vapeur, purée de courgettes",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 300,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI059",
+    "nom": "Omelette aux champignons et salade verte",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 280,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI060",
+    "nom": "Cabillaud au four, épinards à la crème végétale",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 310,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI061",
+    "nom": "Dinde pochée, purée de céleri et haricots verts",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 330,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI062",
+    "nom": "Soupe de potiron, tartine de fromage frais",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 290,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI063",
+    "nom": "Truite vapeur, riz blanc et fenouil",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 340,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI064",
+    "nom": "Poulet grillé léger, quinoa et brocoli",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 360,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI065",
+    "nom": "Soupe de légumes verts, pavé de saumon",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 380,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI066",
+    "nom": "Blanc de dinde, purée de patate douce légère",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 320,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI067",
+    "nom": "Velouté de chou-fleur, œuf mollet",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 270,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI068",
+    "nom": "Colin au court-bouillon, pommes vapeur",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 300,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI069",
+    "nom": "Salade composée au poulet froid et quinoa",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 340,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI070",
+    "nom": "Filet de sole, courgettes vapeur et riz basmati",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 310,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI071",
+    "nom": "Soupe miso douce, tofu vapeur et légumes",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 280,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI072",
+    "nom": "Daurade au four, carottes et haricots verts",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 320,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI073",
+    "nom": "Escalope de dinde, purée de panais",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 330,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI074",
+    "nom": "Bouillon de légumes, blanc de poulet émincé",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 290,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI075",
+    "nom": "Lieu noir vapeur, semoule et brocoli",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 340,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI076",
+    "nom": "Potage de légumes, galette de sarrasin garnie",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 310,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI077",
+    "nom": "Merlan au four, purée de carottes",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 300,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI078",
+    "nom": "Poulet au paprika, riz et courgettes",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 350,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI079",
+    "nom": "Velouté de butternut, truite fumée",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 320,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "diner",
+    "id": "DI080",
+    "nom": "Bar en papillote légère, légumes vapeur",
+    "ingredients": [
+      {
+        "nom": "Protéine maigre",
+        "quantite": "100-120 g",
+        "rayon": "Viandes & poissons maigres"
+      },
+      {
+        "nom": "Légumes",
+        "quantite": "200 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Féculent (optionnel)",
+        "quantite": "50 g cru",
+        "rayon": "Épicerie sèche"
+      }
+    ],
+    "preparation": "Préparation légère à la vapeur ou au four, portions réduites pour favoriser la digestion nocturne.",
+    "calories": 330,
+    "compatibilite": [
+      "Sans lactose",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO081",
+    "nom": "Pomme cuite à la cannelle",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 95,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO082",
+    "nom": "Yaourt végétal nature",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 75,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO083",
+    "nom": "Compote de poires maison",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 80,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO084",
+    "nom": "Galettes de riz et purée d'amande",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 140,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO085",
+    "nom": "Amandes nature (poignée)",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 100,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO086",
+    "nom": "Smoothie banane-lait d'amande",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 120,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO087",
+    "nom": "Poire fraîche et infusion",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 102,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO088",
+    "nom": "Fromage blanc 0% et myrtilles",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 110,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO089",
+    "nom": "Galette de maïs et compote",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 95,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO090",
+    "nom": "Banane mûre",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 89,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO091",
+    "nom": "Purée de fruits maison",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 70,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO092",
+    "nom": "Petit bol de flocons d'avoine",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 85,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO093",
+    "nom": "Kiwi et tisane de camomille",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 60,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO094",
+    "nom": "Yaourt de soja et miel",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 95,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "collation",
+    "id": "CO095",
+    "nom": "Galette de riz et banane écrasée",
+    "ingredients": [
+      {
+        "nom": "Collation légère",
+        "quantite": "1 portion",
+        "rayon": "Fruits et légumes"
+      }
+    ],
+    "preparation": "Collation simple et digeste, à consommer entre les repas principaux.",
+    "calories": 125,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dessert",
+    "id": "DS096",
+    "nom": "Compote de pommes tiède à la vanille",
+    "ingredients": [
+      {
+        "nom": "Fruits",
+        "quantite": "150 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Édulcorant doux",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Dessert léger et sans matière grasse, sucré naturellement avec des fruits.",
+    "calories": 110,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dessert",
+    "id": "DS097",
+    "nom": "Poires pochées au sirop léger",
+    "ingredients": [
+      {
+        "nom": "Fruits",
+        "quantite": "150 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Édulcorant doux",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Dessert léger et sans matière grasse, sucré naturellement avec des fruits.",
+    "calories": 130,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dessert",
+    "id": "DS098",
+    "nom": "Riz au lait d'amande et cannelle",
+    "ingredients": [
+      {
+        "nom": "Fruits",
+        "quantite": "150 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Édulcorant doux",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Dessert léger et sans matière grasse, sucré naturellement avec des fruits.",
+    "calories": 150,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dessert",
+    "id": "DS099",
+    "nom": "Sorbet maison à la mangue",
+    "ingredients": [
+      {
+        "nom": "Fruits",
+        "quantite": "150 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Édulcorant doux",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Dessert léger et sans matière grasse, sucré naturellement avec des fruits.",
+    "calories": 95,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  },
+  {
+    "type": "dessert",
+    "id": "DS100",
+    "nom": "Clafoutis aux myrtilles allégé",
+    "ingredients": [
+      {
+        "nom": "Fruits",
+        "quantite": "150 g",
+        "rayon": "Fruits et légumes"
+      },
+      {
+        "nom": "Édulcorant doux",
+        "quantite": "1 c. à soupe",
+        "rayon": "Épicerie sucrée"
+      }
+    ],
+    "preparation": "Dessert léger et sans matière grasse, sucré naturellement avec des fruits.",
+    "calories": 140,
+    "compatibilite": [
+      "Sans lactose",
+      "Sans gluten",
+      "Végétarien",
+      "Anti-reflux",
+      "Facile à digérer",
+      "Faible en gras"
+    ]
+  }
+]
