@@ -46,3 +46,14 @@ export type SauvegardePlan = {
   plan: RepasPlanifie[];
   notesCourses?: string; // Notes supplémentaires pour la liste de courses
 };
+
+export type RecetteNote = {
+  recetteId: string;
+  note?: string; // Note personnelle
+  etoiles: number; // 0-5
+  dateModification: string; // ISO date
+};
+
+export type RecettesNotes = {
+  [recetteId: string]: RecetteNote;
+};
