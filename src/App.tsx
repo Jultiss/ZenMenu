@@ -287,7 +287,7 @@ function App() {
           </div>
         </header>
 
-        <Navigation />
+        <Navigation isScrolled={isHeaderScrolled} />
 
         <main className="app-main">
           <Routes>

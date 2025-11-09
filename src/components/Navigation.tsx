@@ -1,9 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import './Navigation.css';
 
-export function Navigation() {
+interface NavigationProps {
+  isScrolled?: boolean;
+}
+
+export function Navigation({ isScrolled = false }: NavigationProps) {
   return (
-    <nav className="navigation">
+    <nav className={`navigation ${isScrolled ? 'hidden' : ''}`}>
       <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
         <span className="nav-icon">📅</span>
         <span className="nav-label">Plan</span>
