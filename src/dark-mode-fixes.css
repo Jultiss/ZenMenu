@@ -355,3 +355,335 @@
 [data-theme="dark"] .recette-card:hover {
   box-shadow: 0 8px 24px rgba(91, 163, 255, 0.3) !important;
 }
+
+/* ====================================
+   CORRECTIFS TEXTES HARDCODÉS
+   ==================================== */
+
+[data-theme="dark"] {
+  /* Titres de pages */
+  .page-header h1 {
+    color: var(--text-primary) !important;
+  }
+
+  /* RecherchePage - titres et sous-titres */
+  .recette-card-nom {
+    color: var(--text-primary) !important;
+  }
+
+  .recette-header h3 {
+    color: var(--text-primary) !important;
+  }
+
+  /* Textes secondaires gris */
+  .ingredients-count,
+  .no-results-text,
+  .ingredients-preview li {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Liens et boutons texte */
+  .btn-voir-detail {
+    color: var(--primary-color) !important;
+  }
+
+  .btn-voir-detail:hover {
+    color: var(--primary-hover) !important;
+  }
+
+  /* Tags */
+  .mini-tag {
+    background: var(--bg-tertiary) !important;
+    color: var(--text-secondary) !important;
+  }
+
+  .mini-tag.plus {
+    background: var(--bg-tertiary) !important;
+    color: var(--text-tertiary) !important;
+  }
+
+  /* DetailRecette */
+  .detail-titre {
+    color: var(--text-primary) !important;
+  }
+
+  .section-titre {
+    color: var(--text-primary) !important;
+  }
+
+  .ingredient-nom {
+    color: var(--text-primary) !important;
+  }
+
+  .ingredient-quantite {
+    color: var(--text-secondary) !important;
+  }
+
+  .ingredient-calories {
+    color: var(--text-tertiary) !important;
+  }
+
+  /* SelecteurRepas */
+  .selecteur-titre {
+    color: var(--text-primary) !important;
+  }
+
+  .type-repas-badge {
+    color: var(--primary-color) !important;
+  }
+
+  /* Bouton clear - garder rouge mais visible */
+  .btn-clear {
+    background: var(--bg-tertiary) !important;
+    color: var(--danger-color) !important;
+    border-color: var(--danger-color) !important;
+  }
+
+  .btn-clear:hover {
+    background: rgba(239, 68, 68, 0.1) !important;
+  }
+
+  /* Input placeholders */
+  .input-recherche::placeholder,
+  input::placeholder {
+    color: var(--text-muted) !important;
+  }
+
+  /* Boutons reinitialiser */
+  .btn-reinitialiser {
+    background: var(--bg-tertiary) !important;
+    color: var(--text-primary) !important;
+  }
+
+  .btn-reinitialiser:hover {
+    background: var(--bg-card) !important;
+  }
+
+  /* Liste ingredients preview */
+  .ingredient-item-preview {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Calories total */
+  .calories-total {
+    color: var(--text-primary) !important;
+  }
+
+  /* Modal overlays - titres */
+  .modal-titre,
+  .modal-content h2,
+  .modal-content h3 {
+    color: var(--text-primary) !important;
+  }
+
+  /* Labels de formulaire */
+  label,
+  .form-label {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Textes d'aide */
+  .help-text,
+  .hint-text {
+    color: var(--text-tertiary) !important;
+  }
+
+  /* Liens génériques */
+  a {
+    color: var(--primary-color) !important;
+  }
+
+  a:hover {
+    color: var(--primary-hover) !important;
+  }
+
+  /* Strong/Bold */
+  strong,
+  b {
+    color: var(--text-primary) !important;
+  }
+
+  /* Code blocks si présents */
+  code,
+  pre {
+    background: var(--bg-tertiary) !important;
+    color: var(--text-primary) !important;
+  }
+
+  /* Headers de table si présents */
+  th {
+    color: var(--text-primary) !important;
+    background: var(--bg-tertiary) !important;
+  }
+
+  td {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Badges de statut */
+  .badge,
+  .status-badge {
+    color: white !important;
+  }
+
+  /* Compteurs et numéros */
+  .count,
+  .number {
+    color: var(--primary-color) !important;
+  }
+
+  /* Messages d'erreur */
+  .error-message {
+    color: var(--danger-color) !important;
+  }
+
+  /* Messages de succès */
+  .success-message {
+    color: var(--success-color) !important;
+  }
+
+  /* Messages d'info */
+  .info-message {
+    color: var(--info-color) !important;
+  }
+
+  /* Titres de section */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary) !important;
+  }
+
+  /* Paragraphes génériques */
+  p {
+    color: var(--text-secondary);
+  }
+
+  /* Listes */
+  li {
+    color: var(--text-secondary);
+  }
+
+  /* Dividers */
+  hr {
+    border-color: var(--border-light) !important;
+  }
+
+  /* Focus states */
+  *:focus {
+    outline-color: var(--primary-color) !important;
+  }
+
+  /* Selection text */
+  ::selection {
+    background: var(--primary-color) !important;
+    color: white !important;
+  }
+
+  ::-moz-selection {
+    background: var(--primary-color) !important;
+    color: white !important;
+  }
+
+  /* Disabled states */
+  :disabled,
+  [disabled] {
+    opacity: 0.5;
+    color: var(--text-muted) !important;
+  }
+
+  /* PlanPage - éléments spécifiques */
+  .plan-hebdo h2 {
+    color: var(--text-primary) !important;
+  }
+
+  .day-name {
+    color: var(--text-primary) !important;
+  }
+
+  .meal-type-label {
+    color: var(--text-tertiary) !important;
+  }
+
+  .meal-portions {
+    color: var(--text-secondary) !important;
+  }
+
+  /* RecherchePage - modal ajout */
+  .modal-ajout-plan h3 {
+    color: var(--text-primary) !important;
+  }
+
+  .modal-subtitle {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Checkbox labels */
+  .checkbox-label {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Onglets / Tabs */
+  .tab,
+  .tab-button {
+    color: var(--text-secondary) !important;
+  }
+
+  .tab.active,
+  .tab-button.active {
+    color: var(--primary-color) !important;
+  }
+
+  /* Footer items */
+  .footer-text {
+    color: var(--text-tertiary) !important;
+  }
+
+  /* Empty state messages */
+  .empty-state h3 {
+    color: var(--text-primary) !important;
+  }
+
+  .empty-state p {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Tooltips */
+  .tooltip {
+    background: var(--bg-tertiary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-medium) !important;
+  }
+
+  /* Cards generiques */
+  .card-title {
+    color: var(--text-primary) !important;
+  }
+
+  .card-description {
+    color: var(--text-secondary) !important;
+  }
+
+  .card-footer {
+    color: var(--text-tertiary) !important;
+  }
+
+  /* Date picker si présent */
+  .date-picker {
+    background: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+  }
+
+  /* Dropdown menus */
+  .dropdown-menu {
+    background: var(--bg-card) !important;
+    border-color: var(--border-medium) !important;
+  }
+
+  .dropdown-item {
+    color: var(--text-primary) !important;
+  }
+
+  .dropdown-item:hover {
+    background: var(--bg-tertiary) !important;
+    color: var(--primary-color) !important;
+  }
+}
