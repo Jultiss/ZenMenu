@@ -22,7 +22,7 @@
   background: var(--gradient-secondary);
   color: white;
   border-radius: var(--radius-full);
-  font-size: 0.65rem;
+  font-size: 0.9rem;
   font-weight: var(--font-weight-bold);
   flex-shrink: 0;
   letter-spacing: 0.5px;
