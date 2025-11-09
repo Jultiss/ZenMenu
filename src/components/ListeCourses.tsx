@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { RepasPlanifie, RecettesData } from '../types';
 import { genererListeCourses, IngredientListeCourses } from '../utils/planUtils';
 import './ListeCourses.css';
@@ -67,6 +68,30 @@ interface ListeCoursesProps {
 
 export function ListeCourses({ plan, recettesData }: ListeCoursesProps) {
   const ingredientsList = genererListeCourses(plan, recettesData);
+  
+  // État pour tracker les articles achetés (stockés dans localStorage)
+  const [articlesAchetes, setArticlesAchetes] = useState<Set<string>>(() => {
+    const saved = localStorage.getItem('articlesAchetes');
+    return saved ? new Set(JSON.parse(saved)) : new Set();
+  });
+
+  // Sauvegarder dans localStorage à chaque changement
+  useEffect(() => {
+    localStorage.setItem('articlesAchetes', JSON.stringify(Array.from(articlesAchetes)));
+  }, [articlesAchetes]);
+
+  // Fonction pour toggler le statut d'achat d'un article
+  const toggleArticleAchete = (nomIngredient: string) => {
+    setArticlesAchetes(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(nomIngredient)) {
+        newSet.delete(nomIngredient);
+      } else {
+        newSet.add(nomIngredient);
+      }
+      return newSet;
+    });
+  };
 
   // Organiser les ingrédients par rayon (ou catégorie si pas de rayon)
   const ingredientsParRayon = new Map<string, IngredientListeCourses[]>();
@@ -176,71 +201,89 @@ export function ListeCourses({ plan, recettesData }: ListeCoursesProps) {
     );
   }
 
+  // Fonction pour afficher une catégorie
+  const renderCategorie = (categorie: string, isAchete: boolean) => {
+    const ingredientsCategorie = ingredientsParRayon.get(categorie);
+    
+    if (!ingredientsCategorie || ingredientsCategorie.length === 0) {
+      return null;
+    }
+
+    // Filtrer selon le statut d'achat
+    const ingredientsFiltres = ingredientsCategorie.filter(ingredient => 
+      articlesAchetes.has(ingredient.nom) === isAchete
+    );
+
+    if (ingredientsFiltres.length === 0) {
+      return null;
+    }
+    
+    return (
+      <div key={`${categorie}-${isAchete}`} className="categorie-section">
+        <h3 className="categorie-titre">{categorie}</h3>
+        <div className="ingredients-grouped">
+          {ingredientsFiltres.map((ingredient) => (
+            <div 
+              key={ingredient.nom} 
+              className={`ingredient-group ${isAchete ? 'achete' : ''}`}
+              onClick={() => toggleArticleAchete(ingredient.nom)}
+            >
+              <span className="ingredient-nom">
+                {ingredient.nom.charAt(0).toUpperCase() + ingredient.nom.slice(1)}
+              </span>
+              <span className="ingredient-quantites">
+                {ingredient.quantites.join(', ')}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
+  // Calculer les compteurs
+  const nombreArticlesAchetes = Array.from(articlesAchetes).filter(nom => 
+    ingredientsList.some(ing => ing.nom === nom)
+  ).length;
+
   return (
     <div className="liste-courses">
       <div className="liste-header">
+        <h2>🛒 Liste de courses</h2>
         <button className="btn-copy" onClick={copierListeCourses}>
           📋 Copier
         </button>
       </div>
 
+      {/* Articles à acheter */}
       <div className="ingredients-par-categorie">
         {/* Afficher d'abord les catégories dans l'ordre défini */}
-        {ordreCategories.map(categorie => {
-          const ingredientsCategorie = ingredientsParRayon.get(categorie);
-          
-          if (!ingredientsCategorie || ingredientsCategorie.length === 0) {
-            return null;
-          }
-          
-          return (
-            <div key={categorie} className="categorie-section">
-              <h3 className="categorie-titre">{categorie}</h3>
-              <div className="ingredients-grouped">
-                {ingredientsCategorie.map((ingredient) => (
-                  <div key={ingredient.nom} className="ingredient-group">
-                    <span className="ingredient-nom">
-                      {ingredient.nom.charAt(0).toUpperCase() + ingredient.nom.slice(1)}
-                    </span>
-                    <span className="ingredient-quantites">
-                      {ingredient.quantites.join(', ')}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          );
-        })}
+        {ordreCategories.map(categorie => renderCategorie(categorie, false))}
         
         {/* Afficher les catégories non prévues dans l'ordre */}
         {tousLesRayons
           .filter(rayon => !ordreCategories.includes(rayon))
-          .map(categorie => {
-            const ingredientsCategorie = ingredientsParRayon.get(categorie);
-            
-            if (!ingredientsCategorie || ingredientsCategorie.length === 0) {
-              return null;
-            }
-            
-            return (
-              <div key={categorie} className="categorie-section">
-                <h3 className="categorie-titre">{categorie}</h3>
-                <div className="ingredients-grouped">
-                  {ingredientsCategorie.map((ingredient) => (
-                    <div key={ingredient.nom} className="ingredient-group">
-                      <span className="ingredient-nom">
-                        {ingredient.nom.charAt(0).toUpperCase() + ingredient.nom.slice(1)}
-                      </span>
-                      <span className="ingredient-quantites">
-                        {ingredient.quantites.join(', ')}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
+          .map(categorie => renderCategorie(categorie, false))}
       </div>
+
+      {/* Articles achetés */}
+      {nombreArticlesAchetes > 0 && (
+        <>
+          <div className="separateur-achetes">
+            <h3>✅ Articles achetés ({nombreArticlesAchetes})</h3>
+            <p className="info-achetes">Cliquez sur un article pour le remettre dans la liste</p>
+          </div>
+          <div className="ingredients-par-categorie achetes">
+            {/* Afficher d'abord les catégories dans l'ordre défini */}
+            {ordreCategories.map(categorie => renderCategorie(categorie, true))}
+            
+            {/* Afficher les catégories non prévues dans l'ordre */}
+            {tousLesRayons
+              .filter(rayon => !ordreCategories.includes(rayon))
+              .map(categorie => renderCategorie(categorie, true))}
+          </div>
+        </>
+      )}
     </div>
   );
 }
