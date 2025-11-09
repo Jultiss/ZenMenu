@@ -2,6 +2,14 @@
    CORRECTIFS DARK MODE GLOBAUX
    ==================================== */
 
+/* DÉSACTIVER EN IMPRESSION - Important pour ne pas interférer avec print.css */
+@media print {
+  [data-theme="dark"] * {
+    /* Annuler TOUS les styles dark mode en impression */
+    all: revert !important;
+  }
+}
+
 /* Override des backgrounds blancs codés en dur */
 [data-theme="dark"] {
   /* Cartes et conteneurs */
