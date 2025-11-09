@@ -247,6 +247,11 @@
   }
 
   .portions-display {
+    display: none !important;
+  }
+
+  .portions-display-print {
+    display: block !important;
     font-size: 0.55rem !important;
     color: #666 !important;
     font-weight: 500 !important;

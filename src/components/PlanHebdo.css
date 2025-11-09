@@ -127,6 +127,10 @@
   text-align: center;
 }
 
+.portions-display-print {
+  display: none;
+}
+
 .day-cell {
   background-color: var(--secondary-color);
   font-weight: 700;

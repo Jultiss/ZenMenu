@@ -84,6 +84,9 @@ export function PlanHebdo({ plan, recettesData, onModifierRepas, onModifierPorti
                       >
                         {recette.nom}
                       </div>
+                      <span className="portions-display-print">
+                        {repas?.portions || 1} portion{(repas?.portions || 1) > 1 ? 's' : ''}
+                      </span>
                       <div className="meal-actions">
                         <div className="portions-control">
                           <button
