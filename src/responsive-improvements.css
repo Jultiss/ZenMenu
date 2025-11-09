@@ -9,28 +9,25 @@
 @media (max-width: 768px) and (orientation: landscape) {
   /* Header plus compact en paysage */
   .app-header {
-    padding: 0.5rem 1rem;
+    padding: 16px 12px 12px;
   }
 
-  .app-header h1 {
-    font-size: 1.25rem;
-    margin-bottom: 0.125rem;
+  .zen-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
   }
 
-  .app-header .subtitle {
-    font-size: 0.7rem;
-    margin-bottom: 0.5rem;
+  .app-title {
+    font-size: 28px;
   }
 
-  .header-actions {
-    gap: 0.375rem;
+  .tagline {
+    font-size: 12px;
   }
 
-  .btn-generate,
-  .btn-reset {
-    min-height: 40px;
-    font-size: 0.75rem;
-    padding: 0.5rem 1rem;
+  .header-content {
+    gap: 8px;
   }
 
   /* Navigation plus compacte en paysage */
@@ -184,18 +181,22 @@
    PETITS TÉLÉPHONES (< 375px)
    ==================================== */
 @media (max-width: 374px) {
-  .app-header h1 {
-    font-size: 1.25rem;
+  .zen-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 34px;
   }
 
-  .app-header .subtitle {
-    font-size: 0.75rem;
+  .app-title {
+    font-size: 28px;
   }
 
-  .btn-generate,
-  .btn-reset {
-    font-size: 0.75rem;
-    padding: 0.625rem 1rem;
+  .tagline {
+    font-size: 11px;
+  }
+
+  .header-content {
+    gap: 8px;
   }
 
   .nav-link {
