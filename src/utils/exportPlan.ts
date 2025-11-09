@@ -17,8 +17,31 @@ export function exportPlanToPDF() {
     console.log('Nombre de repas:', meals.length);
   }
   
+  // FORCER les styles inline pour bypasser @media print
+  const html = document.documentElement;
+  html.style.setProperty('background', 'white', 'important');
+  html.style.setProperty('color', 'black', 'important');
+  
+  document.body.style.setProperty('background', 'white', 'important');
+  document.body.style.setProperty('color', 'black', 'important');
+  
   // Ajouter une classe temporaire pour les styles d'impression
   document.body.classList.add('printing-plan');
+  html.classList.add('printing-active');
+  
+  // Alerter l'utilisateur des paramètres à vérifier
+  const message = 
+`📄 IMPORTANT - Paramètres d'impression:
+
+Dans l'aperçu, active :
+✓ "Arrière-plans" / "Background graphics"
+✓ "Couleurs d'arrière-plan"
+
+Chrome: Plus de paramètres → Options de fond
+Safari: Menu → Imprimer les arrière-plans
+Firefox: Options de page → Couleurs d'arrière-plan`;
+  
+  alert(message);
   
   // Petit délai pour que les styles s'appliquent
   setTimeout(() => {
@@ -28,6 +51,11 @@ export function exportPlanToPDF() {
     // Retirer la classe après impression
     setTimeout(() => {
       document.body.classList.remove('printing-plan');
+      html.classList.remove('printing-active');
+      html.style.removeProperty('background');
+      html.style.removeProperty('color');
+      document.body.style.removeProperty('background');
+      document.body.style.removeProperty('color');
     }, 1000);
   }, 100);
 }

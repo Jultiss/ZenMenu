@@ -1,5 +1,38 @@
 /* PRINT SIMPLE - TEST */
 
+/* STYLES SANS @media print - Pour forcer l'affichage */
+html.printing-active,
+html.printing-active * {
+  background: white !important;
+  color: black !important;
+}
+
+html.printing-active .navigation,
+html.printing-active .app-header,
+html.printing-active .btn-action {
+  display: none !important;
+}
+
+html.printing-active .plan-hebdo {
+  background: white !important;
+  padding: 20px !important;
+  border: 5px solid red !important;
+}
+
+html.printing-active .plan-hebdo h2 {
+  color: black !important;
+  background: yellow !important;
+  padding: 20px !important;
+  font-size: 24pt !important;
+  border: 3px solid red !important;
+}
+
+html.printing-active .cell {
+  border: 2px solid black !important;
+  padding: 10px !important;
+  min-height: 60px !important;
+}
+
 @media print {
   /* Page setup */
   @page {
