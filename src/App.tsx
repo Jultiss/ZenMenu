@@ -13,6 +13,7 @@ import { RecherchePage } from './pages/RecherchePage';
 import './App.css';
 import './responsive-improvements.css';
 import './print.css';
+import './dark-mode-fixes.css';
 
 // Fonction pour transformer le nouveau format JSON (tableau) vers l'ancien format (objet)
 function transformerRecettes(data: any): RecettesData {

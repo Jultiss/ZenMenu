@@ -1,0 +1,290 @@
+/* ====================================
+   CORRECTIFS DARK MODE GLOBAUX
+   ==================================== */
+
+/* Override des backgrounds blancs codés en dur */
+[data-theme="dark"] {
+  /* Cartes et conteneurs */
+  .recette-card,
+  .modal-content,
+  .modal-ajout-plan,
+  .recherche-ingredients,
+  .ingredient-item,
+  .preparation-text,
+  .sauvegarde-card {
+    background: var(--bg-card) !important;
+    color: var(--text-primary);
+  }
+
+  /* Boutons secondaires */
+  .btn-secondary {
+    background: var(--bg-tertiary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-medium) !important;
+  }
+
+  .btn-secondary:hover {
+    background: var(--bg-card) !important;
+    border-color: var(--primary-color) !important;
+  }
+
+  /* Boutons clear/reset */
+  .btn-clear {
+    background: var(--bg-tertiary) !important;
+    color: var(--danger-color) !important;
+    border-color: var(--danger-color) !important;
+  }
+
+  /* Portions badge */
+  .portions-badge {
+    background: var(--bg-tertiary) !important;
+    color: var(--secondary-color) !important;
+  }
+
+  /* Meal card actions */
+  .meal-card-action {
+    background: var(--bg-tertiary) !important;
+  }
+
+  /* Select et inputs */
+  .filtre-select,
+  .search-input-main,
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    background: var(--bg-tertiary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-medium) !important;
+  }
+
+  .filtre-select:focus,
+  .search-input-main:focus,
+  input:focus,
+  textarea:focus {
+    border-color: var(--primary-color) !important;
+    background: var(--bg-card) !important;
+  }
+
+  /* Range inputs (sliders) */
+  input[type="range"]::-webkit-slider-thumb {
+    background: var(--primary-color) !important;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    background: var(--primary-color) !important;
+  }
+
+  /* Bordures des cartes */
+  .recette-card,
+  .sauvegarde-card,
+  .ingredient-item,
+  .preparation-text {
+    border-color: var(--border-light) !important;
+  }
+
+  .recette-card:hover {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 8px 24px rgba(91, 163, 255, 0.2) !important;
+  }
+
+  /* Calories badges - garder visibles */
+  .recette-card-calories,
+  .calories-badge {
+    background: var(--gradient-primary) !important;
+    color: white !important;
+  }
+
+  /* Tags */
+  .mini-tag,
+  .tag-compatibilite,
+  .tag-filtre {
+    background: var(--bg-tertiary) !important;
+    color: var(--text-secondary) !important;
+    border-color: var(--border-medium) !important;
+  }
+
+  .tag-filtre.active {
+    background: var(--primary-color) !important;
+    color: white !important;
+  }
+
+  /* Modal overlays */
+  .modal-overlay,
+  .detail-recette-overlay {
+    background: rgba(0, 0, 0, 0.85) !important;
+  }
+
+  /* Headers de pages */
+  .page-header {
+    color: var(--text-primary);
+  }
+
+  .page-subtitle {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Plan hebdo - cellules */
+  .meal-cell {
+    background: var(--bg-card) !important;
+    border-color: var(--border-light) !important;
+  }
+
+  .meal-cell:hover {
+    background: var(--bg-tertiary) !important;
+    border-color: var(--primary-color) !important;
+  }
+
+  .meal-content h4 {
+    color: var(--text-primary) !important;
+  }
+
+  .meal-content p {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Day labels */
+  .day-label {
+    color: var(--text-primary) !important;
+  }
+
+  /* Empty states */
+  .meal-empty {
+    color: var(--text-tertiary) !important;
+  }
+
+  /* Liste de courses */
+  .liste-courses {
+    background: var(--bg-secondary);
+  }
+
+  .categorie-section {
+    background: var(--bg-card) !important;
+  }
+
+  .categorie-nom {
+    color: var(--primary-color) !important;
+  }
+
+  .ingredient-nom {
+    color: var(--text-primary) !important;
+  }
+
+  .ingredient-quantite {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Historique sauvegardes */
+  .historique-modal {
+    background: var(--bg-secondary) !important;
+  }
+
+  /* Filtres section */
+  .filtres-section {
+    background: var(--bg-card) !important;
+    border-color: var(--border-light) !important;
+  }
+
+  /* Footer éléments */
+  .detail-footer,
+  .modal-footer {
+    background: var(--bg-tertiary) !important;
+    border-top-color: var(--border-light) !important;
+  }
+
+  /* Close buttons */
+  .btn-close {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+  }
+
+  .btn-close:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+  }
+
+  /* Meal type labels */
+  .meal-type {
+    color: var(--text-tertiary) !important;
+  }
+
+  /* Portions info */
+  .portions-info {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Grid headers - garder visibles */
+  .header-cell {
+    background: var(--gradient-primary) !important;
+    color: white !important;
+  }
+
+  /* Navigation (si pas déjà géré) */
+  .navigation {
+    background: var(--glass-bg) !important;
+    border-top-color: var(--border-medium) !important;
+  }
+
+  .nav-link {
+    color: var(--text-tertiary) !important;
+  }
+
+  .nav-link.active {
+    color: var(--primary-color) !important;
+    background: var(--primary-lightest) !important;
+  }
+
+  /* Checkbox custom */
+  .consomme-checkbox:checked {
+    background: var(--success-color) !important;
+  }
+
+  /* Scrollbars (Webkit) */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--bg-tertiary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-medium);
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--border-dark);
+  }
+
+  /* Placeholders */
+  ::placeholder {
+    color: var(--text-muted) !important;
+    opacity: 1;
+  }
+
+  :-ms-input-placeholder {
+    color: var(--text-muted) !important;
+  }
+
+  ::-ms-input-placeholder {
+    color: var(--text-muted) !important;
+  }
+}
+
+/* Fix pour les modales qui ont des backgrounds gradient */
+[data-theme="dark"] .detail-recette-modal {
+  background: var(--bg-secondary) !important;
+}
+
+[data-theme="dark"] .detail-header {
+  background: var(--gradient-primary) !important;
+}
+
+/* Fix pour les éléments avec shadow importantes */
+[data-theme="dark"] .recette-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+}
+
+[data-theme="dark"] .recette-card:hover {
+  box-shadow: 0 8px 24px rgba(91, 163, 255, 0.3) !important;
+}

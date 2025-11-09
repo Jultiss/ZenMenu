@@ -117,69 +117,69 @@
   --radius: var(--radius-lg);
 }
 
-/* 🌙 DARK MODE */
+/* 🌙 DARK MODE - Palette améliorée pour meilleur contraste */
 [data-theme="dark"] {
-  /* Couleurs principales adaptées */
-  --primary-color: #5BA3FF;
-  --primary-hover: #7FB3F0;
-  --primary-light: #357ABD;
-  --primary-lightest: #1A2942;
+  /* Couleurs principales adaptées - plus vives */
+  --primary-color: #60A5FA;
+  --primary-hover: #93C5FD;
+  --primary-light: #3B82F6;
+  --primary-lightest: #1E3A5F;
   
-  --secondary-color: #00E6BF;
-  --secondary-hover: #33EBCC;
-  --secondary-light: #00B894;
-  --secondary-lightest: #0D2921;
+  --secondary-color: #10B981;
+  --secondary-hover: #34D399;
+  --secondary-light: #059669;
+  --secondary-lightest: #064E3B;
   
-  --accent-color: #9B8AFF;
-  --accent-hover: #B5A8FF;
-  --accent-light: #7B68EE;
-  --accent-lightest: #1E1A33;
+  --accent-color: #A78BFA;
+  --accent-hover: #C4B5FD;
+  --accent-light: #8B5CF6;
+  --accent-lightest: #2E1065;
   
-  --success-color: #00E6BF;
-  --warning-color: #FFB366;
-  --danger-color: #FF6B9D;
-  --info-color: #5BA3FF;
+  --success-color: #10B981;
+  --warning-color: #F59E0B;
+  --danger-color: #EF4444;
+  --info-color: #60A5FA;
   
-  /* Fonds sombres */
-  --bg-primary: #0F1419;
-  --bg-secondary: #1A1F26;
-  --bg-tertiary: #242B35;
-  --bg-card: #1E242C;
-  --bg-overlay: rgba(0, 0, 0, 0.7);
+  /* Fonds sombres - plus de contraste */
+  --bg-primary: #0B0F14;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1F2937;
+  --bg-card: #1F2937;
+  --bg-overlay: rgba(0, 0, 0, 0.8);
   
-  /* Gradients dark */
-  --gradient-primary: linear-gradient(135deg, #357ABD 0%, #5BA3FF 100%);
-  --gradient-secondary: linear-gradient(135deg, #00B894 0%, #00E6BF 100%);
-  --gradient-accent: linear-gradient(135deg, #7B68EE 0%, #9B8AFF 100%);
-  --gradient-wellness: linear-gradient(135deg, #357ABD 0%, #7B68EE 50%, #00B894 100%);
-  --gradient-header: linear-gradient(135deg, #1E242C 0%, #242B35 100%);
+  /* Gradients dark - plus saturés */
+  --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+  --gradient-secondary: linear-gradient(135deg, #059669 0%, #10B981 100%);
+  --gradient-accent: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%);
+  --gradient-wellness: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #10B981 100%);
+  --gradient-header: linear-gradient(135deg, #1F2937 0%, #374151 100%);
   
-  /* Texte inversé */
-  --text-primary: #E8EDF2;
-  --text-secondary: #B8C5D3;
-  --text-tertiary: #95A5B8;
+  /* Texte inversé - meilleur contraste */
+  --text-primary: #F9FAFB;
+  --text-secondary: #D1D5DB;
+  --text-tertiary: #9CA3AF;
   --text-white: #FFFFFF;
-  --text-muted: #5A6C7D;
+  --text-muted: #6B7280;
   
-  /* Bordures sombres */
-  --border-light: #2A3340;
-  --border-medium: #3A4350;
-  --border-dark: #5A6C7D;
+  /* Bordures sombres - plus visibles */
+  --border-light: #374151;
+  --border-medium: #4B5563;
+  --border-dark: #6B7280;
   --border-focus: var(--primary-color);
   
-  /* Ombres dark */
-  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-  --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 12px 0 rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 8px 24px 0 rgba(0, 0, 0, 0.6);
-  --shadow-xl: 0 12px 32px 0 rgba(0, 0, 0, 0.7);
-  --shadow-card: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
-  --shadow-float: 0 8px 16px -4px rgba(0, 0, 0, 0.6);
+  /* Ombres dark - plus prononcées */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 4px 12px 0 rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 8px 24px 0 rgba(0, 0, 0, 0.8);
+  --shadow-xl: 0 12px 32px 0 rgba(0, 0, 0, 0.9);
+  --shadow-card: 0 2px 8px 0 rgba(0, 0, 0, 0.6);
+  --shadow-float: 0 8px 16px -4px rgba(0, 0, 0, 0.8);
   
-  /* Glass dark */
-  --glass-bg: rgba(30, 36, 44, 0.7);
+  /* Glass dark - plus opaque */
+  --glass-bg: rgba(31, 41, 55, 0.8);
   --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
   
   /* Compatibility */
   --bg-color: var(--bg-secondary);

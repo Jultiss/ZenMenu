@@ -45,11 +45,24 @@
 
 /* Dark mode adaptations */
 [data-theme="dark"] .app-header {
+  background: var(--gradient-header);
   border-bottom-color: var(--border-medium);
 }
 
 [data-theme="dark"] .zen-icon {
-  background: linear-gradient(135deg, #357ABD 0%, #5BA3FF 100%);
+  background: var(--gradient-primary);
+}
+
+[data-theme="dark"] .app-title {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .app-title .zen {
+  color: var(--primary-color);
+}
+
+[data-theme="dark"] .tagline {
+  color: var(--text-secondary);
 }
 
 /* Header rétracté au scroll */
