@@ -27,24 +27,26 @@
 }
 
 .header-cell {
-  background-color: var(--primary-color);
+  background: var(--bg-gradient);
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
+  letter-spacing: -0.2px;
 }
 
 .meal-cell {
-  background-color: var(--bg-color);
-  border: 2px solid var(--border-color);
+  background-color: white;
+  border: 2px solid var(--border-light);
   cursor: pointer;
-  transition: all 0.2s;
+  transition: var(--transition-base);
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-xs);
 }
 
 .meal-cell:hover {
   border-color: var(--primary-color);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
 
@@ -134,7 +136,7 @@
   min-width: 28px;
   min-height: 28px;
   padding: 0;
-  background-color: var(--primary-color);
+  background: var(--bg-gradient);
   color: white;
   border-radius: 50%;
   font-size: 0.875rem;
@@ -143,19 +145,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s;
+  transition: var(--transition-base);
   flex-shrink: 0;
+  box-shadow: var(--shadow-xs);
 }
 
 .btn-portion:hover:not(:disabled) {
-  background-color: var(--secondary-color);
-  transform: scale(1.1);
+  transform: scale(1.15);
+  box-shadow: var(--shadow-sm);
+  filter: brightness(1.1);
 }
 
 .btn-portion:disabled {
-  background-color: #d1d5db;
+  background: var(--border-medium);
   cursor: not-allowed;
   opacity: 0.5;
+  box-shadow: none;
 }
 
 .portions-display {
@@ -171,17 +176,18 @@
 }
 
 .day-cell {
-  background-color: var(--secondary-color);
-  font-weight: 700;
+  background: linear-gradient(135deg, var(--secondary-color), #9D73E6);
+  font-weight: 800;
   color: white;
   font-size: 0.9rem;
-  border-right: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-light);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.375rem;
   padding: 0.5rem 0.25rem;
+  letter-spacing: -0.3px;
 }
 
 .day-name {
@@ -223,18 +229,21 @@
 }
 
 .btn-change {
-  padding: 0.35rem 0.75rem;
-  background-color: var(--primary-color);
+  padding: 0.4rem 0.875rem;
+  background: var(--bg-gradient);
   color: white;
-  border-radius: calc(var(--radius) / 2);
-  font-size: 0.8rem;
-  font-weight: 500;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: var(--transition-base);
+  box-shadow: var(--shadow-xs);
+  letter-spacing: -0.1px;
 }
 
 .meal-cell:hover .btn-change {
   opacity: 1;
+  transform: scale(1.05);
 }
 
 .meal-empty {
