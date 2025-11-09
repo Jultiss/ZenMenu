@@ -31,7 +31,12 @@
   box-shadow: var(--shadow-sm);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-xs);
+  line-height: 1;
+  min-height: 44px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .btn-copy:hover {

@@ -197,17 +197,26 @@
   padding: 0.75rem 1.5rem;
   background: #f1f5f9;
   border: none;
-  border-radius: 12px;
-  font-size: 0.9375rem;
-  font-weight: 700;
-  color: #475569;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-secondary);
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all var(--transition-base);
   align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  min-height: 44px;
+  text-align: center;
+  white-space: nowrap;
+  gap: var(--spacing-xs);
 }
 
 .btn-reset:hover {
-  background: #e2e8f0;
+  background: var(--border-medium);
+  transform: translateY(-2px);
 }
 
 .btn-reset:active {

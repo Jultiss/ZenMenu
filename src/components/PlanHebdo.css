@@ -237,8 +237,23 @@
 }
 
 .btn-clear {
-  background: rgba(239, 68, 68, 0.1);
+  padding: 0.375rem 0.75rem;
+  background: white;
+  border: 1px solid #fecaca;
   color: #dc2626;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  min-height: 32px;
+  text-align: center;
+  white-space: nowrap;
+  gap: 0.25rem;
 }
 
 .btn-clear:hover {
@@ -258,6 +273,13 @@
   box-shadow: var(--shadow-sm);
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  min-height: 32px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .meal-cell:hover .btn-change {
@@ -276,6 +298,31 @@
 .add-icon {
   font-size: 1.5rem;
   color: var(--primary-color);
+}
+
+.btn-vider {
+  padding: 0.25rem 0.5rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  min-height: 28px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-vider:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Responsive */
