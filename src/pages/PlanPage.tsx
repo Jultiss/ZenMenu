@@ -3,6 +3,7 @@ import { RecettesData, RepasPlanifie, TypeRepas, SauvegardePlan } from '../types
 import { PlanHebdo } from '../components/PlanHebdo';
 import { ModalSauvegarde } from '../components/ModalSauvegarde';
 import { HistoriqueSauvegardes } from '../components/HistoriqueSauvegardes';
+import { exportPlanToPDF } from '../utils/exportPlan';
 import './PlanPage.css';
 
 interface PlanPageProps {
@@ -64,6 +65,13 @@ export function PlanPage({
             onClick={() => setHistoriqueOuvert(true)}
           >
             📚 Historique ({sauvegardes.length})
+          </button>
+          <button 
+            className="btn-action btn-export"
+            onClick={exportPlanToPDF}
+            title="Exporter le plan en PDF"
+          >
+            📄 Exporter PDF
           </button>
         </div>
       </div>

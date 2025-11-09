@@ -102,6 +102,22 @@
   transform: translateY(0) scale(0.98);
 }
 
+.btn-export {
+  background: linear-gradient(135deg, #FF6B9D 0%, #FFB366 100%);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-export:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+  filter: brightness(1.08);
+}
+
+.btn-export:active {
+  transform: translateY(0) scale(0.98);
+}
+
 /* Styles d'impression */
 @media print {
   /* Format A4 paysage - DOIT être en premier */

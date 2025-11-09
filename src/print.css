@@ -1,0 +1,198 @@
+/* ====================================
+   STYLES D'IMPRESSION - PDF CLEAN
+   ==================================== */
+
+@media print {
+  /* Masquer les éléments non nécessaires */
+  .navigation,
+  .app-header,
+  .theme-toggle,
+  .btn-action,
+  .btn-save,
+  .btn-history,
+  .header-actions,
+  .modal-overlay,
+  .consomme-checkbox {
+    display: none !important;
+  }
+
+  /* Reset des marges pour maximiser l'espace */
+  @page {
+    margin: 1.5cm;
+    size: A4 portrait;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .app {
+    padding-top: 0 !important;
+    background: white !important;
+  }
+
+  .app-main {
+    padding: 0 !important;
+    display: block !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Titre du plan */
+  .plan-hebdo h2 {
+    color: #2C3E50 !important;
+    font-size: 24pt !important;
+    margin-bottom: 20pt !important;
+    page-break-after: avoid;
+  }
+
+  /* Grille du plan */
+  .plan-grid {
+    width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  .grid-header,
+  .grid-row {
+    display: grid !important;
+    grid-template-columns: 80px repeat(4, 1fr) !important;
+    gap: 4pt !important;
+    page-break-inside: avoid;
+  }
+
+  .cell {
+    border: 1px solid #2C3E50 !important;
+    padding: 8pt !important;
+    background: white !important;
+    min-height: auto !important;
+    page-break-inside: avoid;
+  }
+
+  .header-cell {
+    background: #4A90E2 !important;
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 10pt !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .day-label {
+    font-weight: 700 !important;
+    font-size: 10pt !important;
+    color: #2C3E50 !important;
+  }
+
+  .meal-cell {
+    background: white !important;
+    border: 1px solid #D1DBE5 !important;
+    box-shadow: none !important;
+  }
+
+  .meal-content {
+    gap: 4pt !important;
+  }
+
+  .meal-content h4 {
+    font-size: 9pt !important;
+    color: #2C3E50 !important;
+    margin: 0 !important;
+  }
+
+  .meal-content p {
+    font-size: 8pt !important;
+    color: #5A6C7D !important;
+    margin: 0 !important;
+  }
+
+  .meal-type {
+    font-size: 7pt !important;
+    color: #95A5B8 !important;
+  }
+
+  .meal-portions {
+    font-size: 7pt !important;
+    color: #4A90E2 !important;
+  }
+
+  /* Liste de courses (si présente) */
+  .liste-courses {
+    page-break-before: always;
+  }
+
+  .liste-courses h2 {
+    font-size: 20pt !important;
+    margin-bottom: 15pt !important;
+    color: #2C3E50 !important;
+  }
+
+  .categorie-section {
+    margin-bottom: 15pt !important;
+    page-break-inside: avoid;
+  }
+
+  .categorie-nom {
+    font-size: 12pt !important;
+    font-weight: 700 !important;
+    color: #4A90E2 !important;
+    margin-bottom: 8pt !important;
+    border-bottom: 1px solid #D1DBE5 !important;
+    padding-bottom: 4pt !important;
+  }
+
+  .ingredient-item {
+    font-size: 10pt !important;
+    color: #2C3E50 !important;
+    padding: 4pt 0 !important;
+    border-bottom: 1px dotted #E8EDF2 !important;
+  }
+
+  .ingredient-nom {
+    font-weight: 600 !important;
+  }
+
+  .ingredient-quantite {
+    color: #5A6C7D !important;
+  }
+
+  /* Footer avec date */
+  .print-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 8pt;
+    color: #95A5B8;
+    padding: 10pt 0;
+    border-top: 1px solid #E8EDF2;
+  }
+
+  /* Forcer les couleurs en impression */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Éviter les sauts de page dans les éléments */
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+  }
+
+  .grid-row {
+    page-break-inside: avoid;
+  }
+}
+
+/* Styles pour la preview avant impression */
+body.printing-plan .navigation,
+body.printing-plan .app-header,
+body.printing-plan .btn-action,
+body.printing-plan .btn-save,
+body.printing-plan .btn-history {
+  opacity: 0.3;
+  pointer-events: none;
+}
