@@ -123,14 +123,14 @@
     color: var(--text-secondary) !important;
   }
 
-  /* Plan hebdo - cellules */
+  /* Plan hebdo - cellules PLUS SOMBRES */
   .meal-cell {
-    background: var(--bg-card) !important;
-    border-color: var(--border-light) !important;
+    background: var(--bg-secondary) !important;
+    border-color: var(--border-medium) !important;
   }
 
   .meal-cell:hover {
-    background: var(--bg-tertiary) !important;
+    background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--primary-lightest) 100%) !important;
     border-color: var(--primary-color) !important;
   }
 
@@ -142,14 +142,81 @@
     color: var(--text-secondary) !important;
   }
 
-  /* Day labels */
-  .day-label {
+  .meal-name {
     color: var(--text-primary) !important;
+  }
+
+  .meal-name:hover {
+    background-color: rgba(96, 165, 250, 0.15) !important;
+  }
+
+  /* Day labels - plus sombres */
+  .day-label {
+    background: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-right-color: var(--border-medium) !important;
+  }
+
+  /* Portions control */
+  .portions-control {
+    background: rgba(96, 165, 250, 0.12) !important;
+  }
+
+  .portions-text {
+    color: var(--text-primary) !important;
+  }
+
+  /* Bouton consommé */
+  .btn-consomme {
+    background: var(--bg-tertiary) !important;
+    border-color: var(--secondary-color) !important;
+    color: var(--secondary-color) !important;
+  }
+
+  .btn-consomme.active {
+    background: var(--gradient-secondary) !important;
+    color: white !important;
   }
 
   /* Empty states */
   .meal-empty {
     color: var(--text-tertiary) !important;
+  }
+
+  /* Grid et plan-grid */
+  .plan-grid {
+    background: transparent;
+  }
+
+  .grid-row {
+    background: transparent;
+  }
+
+  /* Cell générique */
+  .cell {
+    background: var(--bg-secondary);
+  }
+
+  /* Meal type text */
+  .meal-type {
+    color: var(--text-tertiary) !important;
+  }
+
+  /* Meal card wrapper si existe */
+  .meal-card {
+    background: var(--bg-secondary) !important;
+    border-color: var(--border-medium) !important;
+  }
+
+  /* Action buttons dans les meals */
+  .meal-card-action {
+    background: var(--bg-tertiary) !important;
+    color: var(--text-secondary) !important;
+  }
+
+  .meal-card-action:hover {
+    background: var(--primary-lightest) !important;
+    color: var(--primary-color) !important;
   }
 
   /* Liste de courses */
