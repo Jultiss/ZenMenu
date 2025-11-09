@@ -24,7 +24,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: linear-gradient(to right, #fdfbfb 0%, #f7f9f9 100%);
+  background: var(--bg-primary);
   border-bottom: 3px solid #a8dadc;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
   padding: 24px 20px 20px;
@@ -35,11 +35,33 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Bouton theme en haut à droite */
+.app-header .theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  top: max(20px, calc(env(safe-area-inset-top) + 12px));
+}
+
+/* Dark mode adaptations */
+[data-theme="dark"] .app-header {
+  border-bottom-color: var(--border-medium);
+}
+
+[data-theme="dark"] .zen-icon {
+  background: linear-gradient(135deg, #357ABD 0%, #5BA3FF 100%);
+}
+
 /* Header rétracté au scroll */
 .app-header.scrolled {
   padding: 12px 20px;
   padding-top: max(12px, calc(env(safe-area-inset-top) + 4px));
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+}
+
+.app-header.scrolled .theme-toggle {
+  top: 10px;
+  top: max(10px, calc(env(safe-area-inset-top) + 4px));
 }
 
 .app-header.scrolled .zen-icon {

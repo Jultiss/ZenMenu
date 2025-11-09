@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { RecettesData, RepasPlanifie, TypeRepas, Recette, SauvegardePlan } from './types';
 import { initializerPlanVide } from './utils/planUtils';
 import { useLocalStorage } from './hooks/useLocalStorage';
+import { useTheme } from './hooks/useTheme';
 import { Navigation } from './components/Navigation';
+import { ThemeToggle } from './components/ThemeToggle';
 import { PlanPage } from './pages/PlanPage';
 import { CoursesPage } from './pages/CoursesPage';
 import { RecherchePage } from './pages/RecherchePage';
@@ -58,6 +60,7 @@ function App() {
   const [chargement, setChargement] = useState(true);
   const [erreur, setErreur] = useState<string | null>(null);
   const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   // Gérer le scroll du header
   useEffect(() => {
@@ -285,6 +288,8 @@ function App() {
             </h1>
             <p className="tagline">Nutrition intuitive</p>
           </div>
+          
+          <ThemeToggle theme={theme} onToggle={toggleTheme} />
         </header>
 
         <Navigation isScrolled={isHeaderScrolled} />
