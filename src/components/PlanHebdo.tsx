@@ -10,9 +10,10 @@ interface PlanHebdoProps {
   onModifierRepas: (jour: number, type: TypeRepas, recetteId: string) => void;
   onModifierPortions: (jour: number, type: TypeRepas, portions: number) => void;
   onViderJour: (jour: number) => void;
+  onToggleConsomme?: (jour: number, type: TypeRepas) => void;
 }
 
-export function PlanHebdo({ plan, recettesData, onModifierRepas, onModifierPortions, onViderJour }: PlanHebdoProps) {
+export function PlanHebdo({ plan, recettesData, onModifierRepas, onModifierPortions, onViderJour, onToggleConsomme }: PlanHebdoProps) {
   const [selectionEnCours, setSelectionEnCours] = useState<{
     jour: number;
     type: TypeRepas;
@@ -78,6 +79,18 @@ export function PlanHebdo({ plan, recettesData, onModifierRepas, onModifierPorti
                 >
                   {recette ? (
                     <div className="meal-content">
+                      {onToggleConsomme && (
+                        <button
+                          className={`btn-consomme ${repas?.consomme ? 'active' : ''}`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onToggleConsomme(index + 1, type);
+                          }}
+                          title={repas?.consomme ? "Marquer comme non consommé" : "Marquer comme consommé"}
+                        >
+                          {repas?.consomme ? '✓' : ''}
+                        </button>
+                      )}
                       <div 
                         className="meal-name"
                         onClick={() => ouvrirSelecteur(index + 1, type)}

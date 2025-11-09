@@ -36,4 +36,13 @@ export type RepasPlanifie = {
   type: TypeRepas;
   recetteId: string | null;
   portions: number; // Nombre de portions (par défaut 1)
+  consomme?: boolean; // Pour le suivi des repas
+};
+
+export type SauvegardePlan = {
+  id: string;
+  nom: string; // Ex: "Semaine du 11/11 au 17/11" ou "Semaine 46"
+  dateCreation: string; // ISO date
+  plan: RepasPlanifie[];
+  notesCourses?: string; // Notes supplémentaires pour la liste de courses
 };

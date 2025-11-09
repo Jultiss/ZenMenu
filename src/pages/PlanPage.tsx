@@ -1,26 +1,41 @@
-import { RecettesData, RepasPlanifie, TypeRepas } from '../types';
+import { useState } from 'react';
+import { RecettesData, RepasPlanifie, TypeRepas, SauvegardePlan } from '../types';
 import { PlanHebdo } from '../components/PlanHebdo';
+import { ModalSauvegarde } from '../components/ModalSauvegarde';
+import { HistoriqueSauvegardes } from '../components/HistoriqueSauvegardes';
 import './PlanPage.css';
 
 interface PlanPageProps {
   plan: RepasPlanifie[];
   recettesData: RecettesData;
+  sauvegardes: SauvegardePlan[];
   onModifierRepas: (jour: number, type: TypeRepas, recetteId: string) => void;
   onModifierPortions: (jour: number, type: TypeRepas, portions: number) => void;
   onGenererPlanAleatoire: () => void;
   onViderJour: (jour: number) => void;
   onReinitialiserPlan: () => void;
+  onSauvegarderPlan: (nom: string) => void;
+  onChargerSauvegarde: (sauvegarde: SauvegardePlan) => void;
+  onSupprimerSauvegarde: (id: string) => void;
+  onToggleConsomme: (jour: number, type: TypeRepas) => void;
 }
 
 export function PlanPage({
   plan,
   recettesData,
+  sauvegardes,
   onModifierRepas,
   onModifierPortions,
   onGenererPlanAleatoire,
   onViderJour,
-  onReinitialiserPlan
+  onReinitialiserPlan,
+  onSauvegarderPlan,
+  onChargerSauvegarde,
+  onSupprimerSauvegarde,
+  onToggleConsomme
 }: PlanPageProps) {
+  const [modalSauvegardeOuverte, setModalSauvegardeOuverte] = useState(false);
+  const [historiqueOuvert, setHistoriqueOuvert] = useState(false);
   return (
     <div className="page-container">
       <div className="page-header">
@@ -39,10 +54,16 @@ export function PlanPage({
             🔄 Réinitialiser
           </button>
           <button 
-            className="btn-action btn-print"
-            onClick={() => window.print()}
+            className="btn-action btn-save"
+            onClick={() => setModalSauvegardeOuverte(true)}
           >
-            🖨️ Imprimer
+            💾 Sauvegarder
+          </button>
+          <button 
+            className="btn-action btn-history"
+            onClick={() => setHistoriqueOuvert(true)}
+          >
+            📚 Historique ({sauvegardes.length})
           </button>
         </div>
       </div>
@@ -53,7 +74,25 @@ export function PlanPage({
         onModifierRepas={onModifierRepas}
         onModifierPortions={onModifierPortions}
         onViderJour={onViderJour}
+        onToggleConsomme={onToggleConsomme}
       />
+
+      {modalSauvegardeOuverte && (
+        <ModalSauvegarde
+          onSauvegarder={onSauvegarderPlan}
+          onFermer={() => setModalSauvegardeOuverte(false)}
+        />
+      )}
+
+      {historiqueOuvert && (
+        <HistoriqueSauvegardes
+          sauvegardes={sauvegardes}
+          recettesData={recettesData}
+          onCharger={onChargerSauvegarde}
+          onSupprimer={onSupprimerSauvegarde}
+          onFermer={() => setHistoriqueOuvert(false)}
+        />
+      )}
     </div>
   );
 }

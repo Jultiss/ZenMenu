@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { RecettesData, RepasPlanifie, TypeRepas, Recette } from './types';
+import { RecettesData, RepasPlanifie, TypeRepas, Recette, SauvegardePlan } from './types';
 import { initializerPlanVide } from './utils/planUtils';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { Navigation } from './components/Navigation';
@@ -54,6 +54,7 @@ function transformerRecettes(data: any): RecettesData {
 function App() {
   const [recettesData, setRecettesData] = useState<RecettesData | null>(null);
   const [plan, setPlan] = useLocalStorage<RepasPlanifie[]>('plan-menu-digestion', initializerPlanVide());
+  const [sauvegardes, setSauvegardes] = useLocalStorage<SauvegardePlan[]>('plan-menu-sauvegardes', []);
   const [chargement, setChargement] = useState(true);
   const [erreur, setErreur] = useState<string | null>(null);
   // Charger les données des recettes
@@ -204,6 +205,37 @@ function App() {
     setPlan(nouveauPlan);
   };
 
+  const sauvegarderPlan = (nom: string) => {
+    const nouvelleSauvegarde: SauvegardePlan = {
+      id: Date.now().toString(),
+      nom,
+      dateCreation: new Date().toISOString(),
+      plan: [...plan]
+    };
+    
+    setSauvegardes((prevSauvegardes: SauvegardePlan[]) => [nouvelleSauvegarde, ...prevSauvegardes]);
+  };
+
+  const chargerSauvegarde = (sauvegarde: SauvegardePlan) => {
+    setPlan(sauvegarde.plan);
+  };
+
+  const supprimerSauvegarde = (id: string) => {
+    setSauvegardes((prevSauvegardes: SauvegardePlan[]) => 
+      prevSauvegardes.filter(s => s.id !== id)
+    );
+  };
+
+  const toggleConsomme = (jour: number, type: TypeRepas) => {
+    setPlan((prevPlan: RepasPlanifie[]) =>
+      prevPlan.map((repas: RepasPlanifie) =>
+        repas.jour === jour && repas.type === type
+          ? { ...repas, consomme: !repas.consomme }
+          : repas
+      )
+    );
+  };
+
 
   if (chargement) {
     return (
@@ -247,11 +279,16 @@ function App() {
                 <PlanPage
                   plan={plan}
                   recettesData={recettesData}
+                  sauvegardes={sauvegardes}
                   onModifierRepas={modifierRepas}
                   onModifierPortions={modifierPortions}
                   onGenererPlanAleatoire={genererPlanAleatoire}
                   onViderJour={viderJour}
                   onReinitialiserPlan={reinitialiserPlan}
+                  onSauvegarderPlan={sauvegarderPlan}
+                  onChargerSauvegarde={chargerSauvegarde}
+                  onSupprimerSauvegarde={supprimerSauvegarde}
+                  onToggleConsomme={toggleConsomme}
                 />
               }
             />
