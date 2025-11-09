@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { RecettesData, Recette, TypeRepas, RecetteNote } from '../types';
 import DetailRecette from '../components/DetailRecette';
+import { StarRating } from '../components/StarRating';
 import { JOURS_SEMAINE, TYPES_REPAS } from '../utils/planUtils';
 import './RecherchePage.css';
 import './RecherchePage-modal.css';
@@ -19,6 +20,7 @@ export function RecherchePage({ recettesData, onAjouterAuPlan, obtenirNote, onSa
   const [recetteDetaillee, setRecetteDetaillee] = useState<Recette | null>(null);
   const [caloriesMax, setCaloriesMax] = useState<number>(1000);
   const [recetteAAjouter, setRecetteAAjouter] = useState<Recette | null>(null);
+  const [afficherFavoris, setAfficherFavoris] = useState(false);
 
   // Récupérer toutes les recettes
   const toutesRecettes = useMemo(() => {
@@ -75,9 +77,17 @@ export function RecherchePage({ recettesData, onAjouterAuPlan, obtenirNote, onSa
         return false;
       }
 
+      // Filtre par favoris (≥4 étoiles)
+      if (afficherFavoris && obtenirNote) {
+        const note = obtenirNote(recette.id);
+        if (!note || note.etoiles < 4) {
+          return false;
+        }
+      }
+
       return true;
     });
-  }, [toutesRecettes, recherche, categorieSelectionnee, tagsSelectionnes, caloriesMax, recettesData]);
+  }, [toutesRecettes, recherche, categorieSelectionnee, tagsSelectionnes, caloriesMax, afficherFavoris, obtenirNote, recettesData]);
 
   const toggleTag = (tag: string) => {
     setTagsSelectionnes(prev =>
@@ -90,6 +100,7 @@ export function RecherchePage({ recettesData, onAjouterAuPlan, obtenirNote, onSa
     setTagsSelectionnes([]);
     setCategorieSelectionnee('toutes');
     setCaloriesMax(1000);
+    setAfficherFavoris(false);
   };
 
   return (
@@ -110,6 +121,15 @@ export function RecherchePage({ recettesData, onAjouterAuPlan, obtenirNote, onSa
           onChange={(e) => setRecherche(e.target.value)}
           className="search-input-main"
         />
+        {obtenirNote && (
+          <button
+            className={`btn-favoris-toggle ${afficherFavoris ? 'active' : ''}`}
+            onClick={() => setAfficherFavoris(!afficherFavoris)}
+            title={afficherFavoris ? "Afficher toutes les recettes" : "Afficher uniquement les favoris"}
+          >
+            {afficherFavoris ? '⭐ Favoris' : '☆ Favoris'}
+          </button>
+        )}
       </div>
 
       {/* Filtres */}
@@ -179,6 +199,12 @@ export function RecherchePage({ recettesData, onAjouterAuPlan, obtenirNote, onSa
                 <span className="recette-card-calories">{recette.calories} kcal</span>
               )}
             </div>
+            
+            {obtenirNote && obtenirNote(recette.id) && obtenirNote(recette.id)!.etoiles > 0 && (
+              <div className="recette-card-rating">
+                <StarRating rating={obtenirNote(recette.id)!.etoiles} readonly size="small" />
+              </div>
+            )}
             
             {recette.compatibilite && recette.compatibilite.length > 0 && (
               <div className="recette-card-tags">

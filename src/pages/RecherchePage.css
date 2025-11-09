@@ -54,6 +54,43 @@
   transform: translateY(-2px);
 }
 
+/* Bouton toggle favoris */
+.btn-favoris-toggle {
+  padding: var(--spacing-md) var(--spacing-xl);
+  background: var(--bg-card);
+  border: 2px solid var(--border-medium);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.btn-favoris-toggle:hover {
+  background: var(--primary-lightest);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-favoris-toggle.active {
+  background: linear-gradient(135deg, #FFB366 0%, #FF6B9D 100%);
+  border-color: #FFB366;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 179, 102, 0.4);
+}
+
+.btn-favoris-toggle.active:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px) scale(1.02);
+}
+
 /* 🎛️ Section filtres - Style card moderne */
 .filtres-section {
   background: var(--bg-card);
@@ -265,6 +302,13 @@
   line-height: 1.3;
   min-width: 0;
   word-wrap: break-word;
+}
+
+.recette-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0;
 }
 
 .recette-card-calories {
