@@ -1,63 +1,177 @@
 /**
  * Exporte le plan hebdomadaire en PDF via l'impression du navigateur
+ * Nouvelle approche: ouvrir une fenêtre dédiée avec HTML inline
  */
 export function exportPlanToPDF() {
-  // Debug: Vérifier si le plan existe
+  // Récupérer le contenu du plan
   const planHebdo = document.querySelector('.plan-hebdo');
-  const planGrid = document.querySelector('.plan-grid');
   
-  console.log('=== DEBUG EXPORT PDF ===');
-  console.log('plan-hebdo trouvé:', !!planHebdo);
-  console.log('plan-grid trouvé:', !!planGrid);
-  
-  if (planGrid) {
-    const rows = planGrid.querySelectorAll('.grid-row');
-    console.log('Nombre de lignes:', rows.length);
-    const meals = planGrid.querySelectorAll('.meal-name');
-    console.log('Nombre de repas:', meals.length);
+  if (!planHebdo) {
+    alert('❌ Aucun plan trouvé à exporter');
+    return;
   }
   
-  // FORCER les styles inline pour bypasser @media print
-  const html = document.documentElement;
-  html.style.setProperty('background', 'white', 'important');
-  html.style.setProperty('color', 'black', 'important');
+  // Cloner le contenu
+  const planClone = planHebdo.cloneNode(true) as HTMLElement;
   
-  document.body.style.setProperty('background', 'white', 'important');
-  document.body.style.setProperty('color', 'black', 'important');
+  // Supprimer les éléments non nécessaires du clone
+  planClone.querySelectorAll('.btn-consomme, .meal-actions, .day-actions, .btn-change, .btn-clear').forEach(el => el.remove());
   
-  // Ajouter une classe temporaire pour les styles d'impression
-  document.body.classList.add('printing-plan');
-  html.classList.add('printing-active');
-  
-  // Alerter l'utilisateur des paramètres à vérifier
-  const message = 
-`📄 IMPORTANT - Paramètres d'impression:
-
-Dans l'aperçu, active :
-✓ "Arrière-plans" / "Background graphics"
-✓ "Couleurs d'arrière-plan"
-
-Chrome: Plus de paramètres → Options de fond
-Safari: Menu → Imprimer les arrière-plans
-Firefox: Options de page → Couleurs d'arrière-plan`;
-  
-  alert(message);
-  
-  // Petit délai pour que les styles s'appliquent
-  setTimeout(() => {
-    // Déclencher la boîte de dialogue d'impression
-    window.print();
+  // Créer le HTML complet pour l'impression
+  const printHTML = `
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Plan Hebdomadaire - ZenMenu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     
-    // Retirer la classe après impression
-    setTimeout(() => {
-      document.body.classList.remove('printing-plan');
-      html.classList.remove('printing-active');
-      html.style.removeProperty('background');
-      html.style.removeProperty('color');
-      document.body.style.removeProperty('background');
-      document.body.style.removeProperty('color');
-    }, 1000);
-  }, 100);
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: white;
+      color: black;
+      padding: 20px;
+    }
+    
+    .plan-hebdo {
+      max-width: 100%;
+      background: white;
+    }
+    
+    .plan-hebdo h2 {
+      font-size: 24pt;
+      margin-bottom: 20px;
+      color: #2C3E50;
+      text-align: center;
+      padding: 15px;
+      border: 2px solid #4A90E2;
+      background: #E8F3FC;
+    }
+    
+    .plan-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    
+    .grid-header,
+    .grid-row {
+      display: grid;
+      grid-template-columns: 100px repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid #2C3E50;
+    }
+    
+    .cell {
+      border: 1px solid #2C3E50;
+      padding: 12px;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .header-cell {
+      background: #4A90E2;
+      color: white;
+      font-weight: bold;
+      font-size: 11pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    
+    .day-cell {
+      background: #E8F3FC;
+      color: #2C3E50;
+      font-weight: bold;
+      font-size: 10pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    
+    .day-name {
+      font-weight: bold;
+    }
+    
+    .meal-cell {
+      background: white;
+      color: black;
+    }
+    
+    .meal-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      width: 100%;
+    }
+    
+    .meal-name {
+      font-weight: 600;
+      font-size: 10pt;
+      color: #2C3E50;
+    }
+    
+    .portions-display-print {
+      font-size: 8pt;
+      color: #4A90E2;
+    }
+    
+    .meal-empty {
+      font-size: 9pt;
+      color: #95A5B8;
+      font-style: italic;
+    }
+    
+    @media print {
+      @page {
+        margin: 1.5cm;
+        size: A4 portrait;
+      }
+      
+      body {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  ${planClone.outerHTML}
+  <script>
+    // Imprimer automatiquement et fermer après
+    window.onload = function() {
+      setTimeout(function() {
+        window.print();
+      }, 250);
+    };
+    
+    // Fermer la fenêtre après l'impression (optionnel)
+    window.onafterprint = function() {
+      // Ne pas fermer automatiquement pour laisser l'utilisateur voir le résultat
+      // window.close();
+    };
+  </script>
+</body>
+</html>
+  `;
+  
+  // Ouvrir dans une nouvelle fenêtre
+  const printWindow = window.open('', '_blank', 'width=800,height=600');
+  
+  if (!printWindow) {
+    alert('❌ Popup bloquée ! Autorise les popups pour exporter en PDF.');
+    return;
+  }
+  
+  printWindow.document.write(printHTML);
+  printWindow.document.close();
 }
 
 /**
