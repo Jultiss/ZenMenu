@@ -15,45 +15,63 @@
   padding: 2rem;
 }
 
-/* Header - Style moderne Foodvisor */
+/* 🏥 Header - Style Wellness moderne */
 .app-header {
-  background: var(--bg-gradient);
+  background: var(--gradient-header);
   color: var(--text-white);
-  padding: var(--spacing-xl) var(--spacing-lg);
+  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-xl);
   text-align: center;
   box-shadow: var(--shadow-sm);
   position: relative;
   overflow: hidden;
-  padding-top: max(var(--spacing-xl), env(safe-area-inset-top));
+  padding-top: max(var(--spacing-lg), calc(env(safe-area-inset-top) + 0.5rem));
+}
+
+/* Eléments décoratifs subtils */
+.app-header::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 .app-header::after {
   content: '';
   position: absolute;
-  bottom: -50px;
-  right: -50px;
-  width: 200px;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.1);
+  bottom: -80px;
+  right: -80px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.06) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
 
 .app-header h1 {
-  font-size: 2rem;
+  font-size: var(--font-size-3xl);
   margin-bottom: var(--spacing-xs);
-  font-weight: 800;
-  letter-spacing: -0.5px;
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: -1px;
+  position: relative;
+  z-index: 1;
 }
 
 .app-header .subtitle {
-  font-size: 1rem;
-  opacity: 0.9;
-  font-weight: 400;
+  font-size: var(--font-size-sm);
+  opacity: 0.95;
+  font-weight: var(--font-weight-medium);
   margin-bottom: var(--spacing-lg);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.3px;
 }
 
 .header-actions {

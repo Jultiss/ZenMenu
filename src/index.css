@@ -1,68 +1,120 @@
 :root {
-  /* Palette principale - Fresh & Modern */
-  --primary-color: #00C9A7;
-  --primary-hover: #00A88A;
-  --primary-light: #4DDDC4;
-  --primary-lightest: #E6FAF6;
+  /* 🎨 PALETTE WELLNESS - Headspace/Calm inspired */
   
-  --secondary-color: #845EC2;
-  --accent-coral: #FF6B6B;
-  --accent-orange: #FFA94D;
-  --accent-yellow: #FFC75F;
+  /* Couleurs principales - Santé & Bien-être */
+  --primary-color: #4A90E2;          /* Bleu apaisant - Digestion/Santé */
+  --primary-hover: #357ABD;
+  --primary-light: #7FB3F0;
+  --primary-lightest: #E8F3FC;
   
-  /* Couleurs de fond */
+  --secondary-color: #00D4AA;        /* Vert menthe - Anti-reflux/Naturel */
+  --secondary-hover: #00B894;
+  --secondary-light: #66E5CC;
+  --secondary-lightest: #E6FAF6;
+  
+  --accent-color: #7B68EE;           /* Violet doux - Accent */
+  --accent-hover: #6251D6;
+  --accent-light: #A396F5;
+  --accent-lightest: #F0EDFF;
+  
+  --success-color: #00D4AA;
+  --warning-color: #FFB366;
+  --danger-color: #FF6B9D;
+  --info-color: #4A90E2;
+  
+  /* Couleurs de fond - Apaisantes */
   --bg-primary: #FFFFFF;
-  --bg-secondary: #F8FAFB;
-  --bg-tertiary: #EDF2F7;
-  --bg-gradient: linear-gradient(135deg, #00C9A7 0%, #4DDDC4 100%);
+  --bg-secondary: #F8FAFB;           /* Blanc cassé principal */
+  --bg-tertiary: #F0F4F8;
+  --bg-card: #FFFFFF;
+  --bg-overlay: rgba(0, 0, 0, 0.4);
   
-  /* Texte */
-  --text-primary: #2D3748;
-  --text-secondary: #718096;
-  --text-tertiary: #A0AEC0;
+  /* Gradients modernes et subtils */
+  --gradient-primary: linear-gradient(135deg, #4A90E2 0%, #7FB3F0 100%);
+  --gradient-secondary: linear-gradient(135deg, #00D4AA 0%, #66E5CC 100%);
+  --gradient-accent: linear-gradient(135deg, #7B68EE 0%, #A396F5 100%);
+  --gradient-wellness: linear-gradient(135deg, #4A90E2 0%, #7B68EE 50%, #00D4AA 100%);
+  --gradient-header: linear-gradient(135deg, #4A90E2 0%, #6A7FE8 100%);
+  
+  /* Texte - Hiérarchie claire */
+  --text-primary: #2C3E50;           /* Gris foncé */
+  --text-secondary: #5A6C7D;
+  --text-tertiary: #95A5B8;
   --text-white: #FFFFFF;
+  --text-muted: #B8C5D3;
   
-  /* Bordures */
-  --border-light: #E2E8F0;
-  --border-medium: #CBD5E0;
-  --border-dark: #A0AEC0;
+  /* Bordures douces */
+  --border-light: #E8EDF2;
+  --border-medium: #D1DBE5;
+  --border-dark: #95A5B8;
+  --border-focus: var(--primary-color);
   
-  /* Ombres modernes - plus douces */
-  --shadow-xs: 0 1px 3px 0 rgba(0, 0, 0, 0.03);
-  --shadow-sm: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
-  --shadow-xl: 0 12px 32px 0 rgba(0, 0, 0, 0.15);
-  --shadow-primary: 0 4px 16px 0 rgba(0, 201, 167, 0.25);
-  --shadow-card: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+  /* Ombres ultra-douces - Style iOS moderne */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 2px 4px 0 rgba(74, 144, 226, 0.06);
+  --shadow-md: 0 4px 12px 0 rgba(74, 144, 226, 0.08);
+  --shadow-lg: 0 8px 24px 0 rgba(74, 144, 226, 0.12);
+  --shadow-xl: 0 12px 32px 0 rgba(74, 144, 226, 0.15);
+  --shadow-card: 0 2px 8px 0 rgba(74, 144, 226, 0.04);
+  --shadow-float: 0 8px 16px -4px rgba(74, 144, 226, 0.12);
   
-  /* Rayons de bordure - plus arrondis */
+  /* Glassmorphisme léger */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --glass-shadow: 0 8px 32px 0 rgba(74, 144, 226, 0.1);
+  
+  /* Rayons très arrondis - iOS 26 style */
+  --radius-xs: 8px;
   --radius-sm: 12px;
   --radius-md: 16px;
   --radius-lg: 20px;
   --radius-xl: 24px;
-  --radius-2xl: 32px;
+  --radius-2xl: 28px;
+  --radius-3xl: 32px;
   --radius-full: 9999px;
   
-  /* Espacement cohérent */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 0.75rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-2xl: 3rem;
+  /* Espacement harmonieux */
+  --spacing-xs: 0.5rem;    /* 8px */
+  --spacing-sm: 0.75rem;   /* 12px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 3rem;     /* 48px */
+  --spacing-3xl: 4rem;     /* 64px */
   
-  /* Transitions */
+  /* Transitions fluides - Style iOS */
   --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   
-  /* Compatibility */
+  /* Typographie */
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-base: 1rem;    /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  --font-size-xl: 1.25rem;   /* 20px */
+  --font-size-2xl: 1.5rem;   /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* Z-index hiérarchie */
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-modal: 100;
+  --z-toast: 200;
+  
+  /* Compatibility avec ancien code */
   --bg-color: var(--bg-secondary);
   --surface-color: var(--bg-primary);
   --border-color: var(--border-light);
-  --danger-color: var(--accent-coral);
-  --radius: var(--radius-md);
+  --radius: var(--radius-lg);
 }
 
 * {

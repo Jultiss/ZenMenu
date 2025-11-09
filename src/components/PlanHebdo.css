@@ -18,8 +18,8 @@
 }
 
 .cell {
-  padding: 1rem;
-  border-radius: var(--radius);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-xl);
   min-height: 80px;
   display: flex;
   align-items: center;
@@ -27,27 +27,29 @@
 }
 
 .header-cell {
-  background: var(--bg-gradient);
+  background: var(--gradient-primary);
   color: white;
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: -0.2px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 .meal-cell {
-  background-color: white;
+  background-color: var(--bg-card);
   border: 2px solid var(--border-light);
   cursor: pointer;
-  transition: var(--transition-base);
+  transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow-xs);
+  box-shadow: var(--shadow-card);
 }
 
 .meal-cell:hover {
-  border-color: var(--primary-color);
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
+  border-color: var(--primary-light);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-float);
+  background: linear-gradient(135deg, #FFFFFF 0%, var(--primary-lightest) 100%);
 }
 
 .meal-content {
@@ -62,40 +64,46 @@
 
 .btn-consomme {
   position: absolute;
-  top: -8px;
-  right: -8px;
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
-  min-height: 24px;
-  max-width: 24px;
-  max-height: 24px;
+  top: var(--spacing-xs);
+  right: var(--spacing-xs);
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  max-width: 28px;
+  max-height: 28px;
   border-radius: 50%;
-  border: 2px solid #10b981;
+  border: 2px solid var(--secondary-color);
   background: white;
-  color: #10b981;
-  font-size: 0.8rem;
-  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s;
+  transition: all var(--transition-bounce);
   z-index: 10;
   padding: 0;
   flex-shrink: 0;
   line-height: 1;
+  box-shadow: var(--shadow-xs);
 }
 
 .btn-consomme:hover {
-  transform: scale(1.1);
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+  transform: scale(1.15) rotate(10deg);
+  box-shadow: 0 4px 12px rgba(0, 212, 170, 0.3);
+}
+
+.btn-consomme:active {
+  transform: scale(0.95);
 }
 
 .btn-consomme.active {
-  background: linear-gradient(135deg, #10b981, #34d399);
+  background: var(--gradient-secondary);
   color: white;
-  border-color: #10b981;
+  border-color: var(--secondary-color);
+  box-shadow: 0 4px 12px rgba(0, 212, 170, 0.4);
 }
 
 .meal-name {
@@ -136,35 +144,39 @@
 }
 
 .btn-portion {
-  width: 28px;
-  height: 28px;
-  min-width: 28px;
-  min-height: 28px;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
   padding: 0;
-  background: var(--bg-gradient);
+  background: var(--gradient-secondary);
   color: white;
   border-radius: 50%;
-  font-size: 0.875rem;
-  font-weight: 700;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: var(--transition-base);
+  transition: all var(--transition-bounce);
   flex-shrink: 0;
-  box-shadow: var(--shadow-xs);
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-portion:hover:not(:disabled) {
-  transform: scale(1.15);
-  box-shadow: var(--shadow-sm);
-  filter: brightness(1.1);
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: var(--shadow-md);
+  filter: brightness(1.15);
+}
+
+.btn-portion:active:not(:disabled) {
+  transform: scale(0.95);
 }
 
 .btn-portion:disabled {
   background: var(--border-medium);
   cursor: not-allowed;
-  opacity: 0.5;
+  opacity: 0.4;
   box-shadow: none;
 }
 
@@ -181,18 +193,19 @@
 }
 
 .day-cell {
-  background: linear-gradient(135deg, var(--secondary-color), #9D73E6);
-  font-weight: 800;
+  background: var(--gradient-accent);
+  font-weight: var(--font-weight-extrabold);
   color: white;
-  font-size: 0.9rem;
-  border-right: 1px solid var(--border-light);
+  font-size: var(--font-size-sm);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.375rem;
-  padding: 0.5rem 0.25rem;
-  letter-spacing: -0.3px;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-xs);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .day-name {
@@ -234,21 +247,22 @@
 }
 
 .btn-change {
-  padding: 0.4rem 0.875rem;
-  background: var(--bg-gradient);
+  padding: var(--spacing-xs) var(--spacing-md);
+  background: var(--gradient-primary);
   color: white;
   border-radius: var(--radius-full);
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
   opacity: 0;
-  transition: var(--transition-base);
-  box-shadow: var(--shadow-xs);
-  letter-spacing: -0.1px;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .meal-cell:hover .btn-change {
   opacity: 1;
-  transform: scale(1.05);
+  transform: translateY(-2px) scale(1.05);
 }
 
 .meal-empty {

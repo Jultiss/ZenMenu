@@ -15,34 +15,42 @@
 }
 
 .btn-action {
-  padding: 0.875rem 1.75rem;
+  padding: var(--spacing-sm) var(--spacing-xl);
   border: none;
   border-radius: var(--radius-full);
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
   cursor: pointer;
-  transition: var(--transition-base);
+  transition: all var(--transition-base);
   white-space: nowrap;
-  letter-spacing: -0.2px;
+  letter-spacing: 0.3px;
   box-shadow: var(--shadow-sm);
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
 }
 
 .btn-gradient {
-  background: var(--bg-gradient);
+  background: var(--gradient-primary);
   color: white;
-  box-shadow: var(--shadow-primary);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-gradient:hover {
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: var(--shadow-lg);
-  filter: brightness(1.05);
+  filter: brightness(1.08);
+}
+
+.btn-gradient:active {
+  transform: translateY(0) scale(0.98);
 }
 
 .btn-secondary {
   background: white;
-  color: var(--text-primary);
-  border: 2px solid var(--border-light);
+  color: var(--text-secondary);
+  border: 2px solid var(--border-medium);
   box-shadow: var(--shadow-sm);
 }
 
@@ -51,30 +59,43 @@
   box-shadow: var(--shadow-md);
   border-color: var(--primary-color);
   color: var(--primary-color);
+  background: var(--primary-lightest);
+}
+
+.btn-secondary:active {
+  transform: translateY(0) scale(0.98);
 }
 
 .btn-save {
-  background: var(--bg-gradient);
+  background: var(--gradient-secondary);
   color: white;
-  box-shadow: var(--shadow-primary);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-save:hover {
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: var(--shadow-lg);
-  filter: brightness(1.05);
+  filter: brightness(1.08);
+}
+
+.btn-save:active {
+  transform: translateY(0) scale(0.98);
 }
 
 .btn-history {
-  background: linear-gradient(135deg, var(--accent-orange), var(--accent-yellow));
+  background: var(--gradient-accent);
   color: white;
-  box-shadow: 0 4px 12px rgba(255, 169, 77, 0.3);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-history:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(255, 169, 77, 0.4);
-  filter: brightness(1.05);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+  filter: brightness(1.08);
+}
+
+.btn-history:active {
+  transform: translateY(0) scale(0.98);
 }
 
 /* Styles d'impression */
