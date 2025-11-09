@@ -7,6 +7,7 @@
   overflow-x: hidden;
   padding-bottom: 0;
   padding-top: 200px;
+  transition: padding-top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .app.loading,
@@ -31,6 +32,34 @@
   justify-content: center;
   align-items: center;
   padding-top: max(24px, calc(env(safe-area-inset-top) + 16px));
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Header rétracté au scroll */
+.app-header.scrolled {
+  padding: 12px 20px;
+  padding-top: max(12px, calc(env(safe-area-inset-top) + 4px));
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+}
+
+.app-header.scrolled .zen-icon {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  margin-bottom: 0;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.app-header.scrolled .app-title {
+  font-size: 20px;
+}
+
+.app-header.scrolled .tagline {
+  opacity: 0;
+  height: 0;
+  font-size: 0;
+  margin: 0;
 }
 
 /* Conteneur centré */
@@ -39,6 +68,11 @@
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  transition: gap 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-header.scrolled .header-content {
+  gap: 0;
 }
 
 /* Icône Zen 🍃 */
@@ -53,6 +87,7 @@
   font-size: 42px;
   box-shadow: 0 4px 16px rgba(168, 218, 220, 0.35);
   margin-bottom: 4px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Titre "ZenMenu" */
@@ -64,6 +99,7 @@
   margin: 0;
   line-height: 1;
   text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* "Zen" en gras et coloré */
@@ -81,6 +117,7 @@
   line-height: 1;
   text-align: center;
   font-weight: 400;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* 📱 Responsive Header */
@@ -91,6 +128,11 @@
 
   .app-header {
     padding: 20px 16px 16px;
+  }
+
+  .app-header.scrolled {
+    padding: 10px 16px;
+    padding-top: max(10px, calc(env(safe-area-inset-top) + 4px));
   }
 
   .header-content {
@@ -106,6 +148,10 @@
 
   .app-title {
     font-size: 32px;
+  }
+
+  .app-header.scrolled .app-title {
+    font-size: 18px;
   }
 
   .tagline {

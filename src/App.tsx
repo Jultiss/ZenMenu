@@ -57,6 +57,19 @@ function App() {
   const [sauvegardes, setSauvegardes] = useLocalStorage<SauvegardePlan[]>('plan-menu-sauvegardes', []);
   const [chargement, setChargement] = useState(true);
   const [erreur, setErreur] = useState<string | null>(null);
+  const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
+
+  // Gérer le scroll du header
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsHeaderScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   // Charger les données des recettes
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/recettes.json`)
@@ -262,7 +275,7 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <header className="app-header">
+        <header className={`app-header ${isHeaderScrolled ? 'scrolled' : ''}`}>
           <div className="header-content">
             <div className="zen-icon">
               <span>🍃</span>
