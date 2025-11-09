@@ -6,6 +6,7 @@
   max-width: 100vw;
   overflow-x: hidden;
   padding-bottom: 0;
+  padding-top: 80px;
 }
 
 .app.loading,
@@ -15,171 +16,145 @@
   padding: 2rem;
 }
 
-/* 🏥 Header - Style Wellness moderne */
+/* 🍃 Header - Design Épuré Nature */
 .app-header {
-  background: var(--gradient-header);
-  color: var(--text-white);
-  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-xl);
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-  position: relative;
-  overflow: hidden;
-  padding-top: max(var(--spacing-lg), calc(env(safe-area-inset-top) + 0.5rem));
-}
-
-/* Eléments décoratifs subtils */
-.app-header::before {
-  content: '';
-  position: absolute;
-  top: -100px;
-  left: -100px;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.app-header::after {
-  content: '';
-  position: absolute;
-  bottom: -80px;
-  right: -80px;
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.06) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.app-header h1 {
-  font-size: var(--font-size-3xl);
-  margin-bottom: var(--spacing-xs);
-  font-weight: var(--font-weight-extrabold);
-  letter-spacing: -1px;
-  position: relative;
-  z-index: 1;
-}
-
-.app-header .subtitle {
-  font-size: var(--font-size-sm);
-  opacity: 0.95;
-  font-weight: var(--font-weight-medium);
-  margin-bottom: var(--spacing-lg);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 1;
-  letter-spacing: 0.3px;
-}
-
-.header-actions {
-  display: flex;
-  gap: var(--spacing-md);
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
-}
-
-.btn-generate {
-  background-color: rgba(255, 255, 255, 0.95);
-  color: var(--primary-color);
-  padding: var(--spacing-sm) var(--spacing-2xl);
-  border-radius: var(--radius-full);
-  font-size: 0.9rem !important;
-  font-weight: var(--font-weight-bold);
-  box-shadow: var(--shadow-md);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-xs);
-  line-height: 1;
-  min-height: 44px;
-  text-align: center;
-  white-space: nowrap;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.btn-generate:hover {
-  background-color: white;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-}
-
-.btn-reset {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  padding: var(--spacing-sm) var(--spacing-2xl);
-  border-radius: var(--radius-full);
-  font-size: 0.9rem !important;
-  font-weight: var(--font-weight-bold);
-  backdrop-filter: blur(10px);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-xs);
-  line-height: 1;
-  min-height: 44px;
-  text-align: center;
-  white-space: nowrap;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.btn-reset:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);
-}
-
-/* Onglets Navigation */
-.onglets-navigation {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1.5rem 2rem 0;
-  background: var(--bg-color);
-  border-bottom: 2px solid #e5e7eb;
-}
-
-.onglet-btn {
-  padding: 0.875rem 2rem;
-  background: transparent;
-  color: var(--text-secondary);
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: var(--radius) var(--radius) 0 0;
-  transition: all 0.3s;
-  position: relative;
-}
-
-.onglet-btn::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  height: 2px;
-  background: transparent;
-  transition: background-color 0.3s;
+  z-index: 1000;
+  background: linear-gradient(to right, #fdfbfb 0%, #f7f9f9 100%);
+  border-bottom: 3px solid #a8dadc;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding-top: max(16px, calc(env(safe-area-inset-top) + 8px));
 }
 
-.onglet-btn:hover {
-  background: rgba(99, 102, 241, 0.05);
-  color: var(--primary-color);
+/* Section Logo (Gauche) */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.onglet-btn.actif {
-  background: white;
-  color: var(--primary-color);
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+/* Icône Zen 🍃 */
+.zen-icon {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #a8dadc 0%, #457b9d 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 2px 8px rgba(168, 218, 220, 0.3);
+  flex-shrink: 0;
 }
 
-.onglet-btn.actif::after {
-  background: var(--primary-color);
+/* Conteneur du nom de l'app */
+.app-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Titre "ZenMenu" */
+.app-title {
+  font-size: 28px;
+  font-weight: 400;
+  color: #1d3557;
+  letter-spacing: 0.5px;
+  margin: 0;
+  line-height: 1;
+}
+
+/* "Zen" en gras et coloré */
+.app-title .zen {
+  font-weight: 600;
+  color: #457b9d;
+}
+
+/* Tagline "Nutrition intuitive" */
+.tagline {
+  font-size: 12px;
+  color: #457b9d;
+  letter-spacing: 0.5px;
+  margin: 0;
+  line-height: 1;
+}
+
+/* Bouton Profil (Droite) */
+.profile-button {
+  width: 40px;
+  height: 40px;
+  background: #a8dadc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  color: white;
+  font-size: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(168, 218, 220, 0.3);
+}
+
+.profile-button:hover {
+  background: #457b9d;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(69, 123, 157, 0.4);
+}
+
+.profile-button:active {
+  transform: scale(0.98);
+}
+
+.profile-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.3);
+}
+
+/* 📱 Responsive Header */
+@media (max-width: 640px) {
+  .app {
+    padding-top: 70px;
+  }
+
+  .app-header {
+    padding: 12px 16px;
+    height: 70px;
+  }
+
+  .zen-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    border-radius: 14px;
+  }
+
+  .app-title {
+    font-size: 22px;
+  }
+
+  .tagline {
+    font-size: 10px;
+  }
+
+  .profile-button {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .logo-section {
+    gap: 12px;
+  }
 }
 
 /* Main Content */

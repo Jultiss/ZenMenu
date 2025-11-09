@@ -263,10 +263,21 @@ function App() {
     <Router>
       <div className="app">
         <header className="app-header">
-          <h1>🍽️ ZenMenu</h1>
-          <p className="subtitle">
-            Planifiez vos repas anti-reflux et adaptés à la digestion
-          </p>
+          <div className="logo-section">
+            <div className="zen-icon">
+              <span>🍃</span>
+            </div>
+            <div className="app-name">
+              <h1 className="app-title">
+                <span className="zen">Zen</span>Menu
+              </h1>
+              <p className="tagline">Nutrition intuitive</p>
+            </div>
+          </div>
+          
+          <button className="profile-button" aria-label="Accéder au profil">
+            <span>👤</span>
+          </button>
         </header>
 
         <Navigation />
