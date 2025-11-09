@@ -3,6 +3,28 @@
    ==================================== */
 
 @media print {
+  /* FORCER LE MODE CLAIR EN IMPRESSION - Override total du dark mode */
+  html[data-theme="dark"],
+  html[data-theme="dark"] body,
+  html[data-theme="dark"] .app,
+  html[data-theme="dark"] .app-main,
+  html[data-theme="dark"] .page-container,
+  html[data-theme="dark"] .plan-hebdo,
+  html[data-theme="dark"] .plan-grid,
+  html[data-theme="dark"] *:not(.header-cell) {
+    background: white !important;
+    background-color: white !important;
+    color: black !important;
+  }
+
+  /* Override des styles dark-mode-fixes.css */
+  [data-theme="dark"] .meal-cell,
+  [data-theme="dark"] .day-label,
+  [data-theme="dark"] .cell {
+    background: white !important;
+    background-color: white !important;
+  }
+
   /* Masquer les éléments non nécessaires */
   .navigation,
   .app-header,
@@ -10,16 +32,33 @@
   .btn-action,
   .btn-save,
   .btn-history,
+  .btn-export,
   .header-actions,
   .modal-overlay,
-  .consomme-checkbox {
+  .modal-note,
+  .detail-recette-overlay,
+  .consomme-checkbox,
+  .btn-consomme,
+  .portions-control,
+  .btn-portion,
+  .btn-clear,
+  .day-actions {
     display: none !important;
+    visibility: hidden !important;
   }
 
   /* Reset des marges pour maximiser l'espace */
   @page {
     margin: 1.5cm;
     size: A4 portrait;
+  }
+
+  * {
+    box-shadow: none !important;
+  }
+
+  html {
+    background: white !important;
   }
 
   body {
@@ -31,6 +70,7 @@
 
   .app {
     padding-top: 0 !important;
+    padding-bottom: 0 !important;
     background: white !important;
   }
 
@@ -40,18 +80,37 @@
     grid-template-columns: 1fr !important;
   }
 
+  .page-container {
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  .page-header {
+    display: none !important;
+  }
+
   /* Titre du plan */
+  .plan-hebdo {
+    display: block !important;
+    visibility: visible !important;
+  }
+
   .plan-hebdo h2 {
     color: #2C3E50 !important;
     font-size: 24pt !important;
     margin-bottom: 20pt !important;
     page-break-after: avoid;
+    display: block !important;
+    visibility: visible !important;
   }
 
   /* Grille du plan */
   .plan-grid {
     width: 100% !important;
     page-break-inside: avoid;
+    display: flex !important;
+    flex-direction: column !important;
+    visibility: visible !important;
   }
 
   .grid-header,
@@ -60,14 +119,17 @@
     grid-template-columns: 80px repeat(4, 1fr) !important;
     gap: 4pt !important;
     page-break-inside: avoid;
+    visibility: visible !important;
   }
 
   .cell {
     border: 1px solid #2C3E50 !important;
     padding: 8pt !important;
     background: white !important;
-    min-height: auto !important;
+    min-height: 50px !important;
     page-break-inside: avoid;
+    display: flex !important;
+    visibility: visible !important;
   }
 
   .header-cell {
@@ -75,46 +137,99 @@
     color: white !important;
     font-weight: 700 !important;
     font-size: 10pt !important;
+    text-align: center !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .day-label {
     font-weight: 700 !important;
     font-size: 10pt !important;
     color: #2C3E50 !important;
+    background: #E8F3FC !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .day-name {
+    color: #2C3E50 !important;
+    visibility: visible !important;
   }
 
   .meal-cell {
     background: white !important;
     border: 1px solid #D1DBE5 !important;
     box-shadow: none !important;
+    display: flex !important;
+    visibility: visible !important;
   }
 
   .meal-content {
     gap: 4pt !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100%;
+    visibility: visible !important;
+  }
+
+  .meal-name {
+    font-size: 9pt !important;
+    color: #2C3E50 !important;
+    margin: 0 !important;
+    font-weight: 600 !important;
+    display: block !important;
+    visibility: visible !important;
+    text-align: center !important;
   }
 
   .meal-content h4 {
     font-size: 9pt !important;
     color: #2C3E50 !important;
     margin: 0 !important;
+    display: block !important;
+    visibility: visible !important;
   }
 
   .meal-content p {
     font-size: 8pt !important;
     color: #5A6C7D !important;
     margin: 0 !important;
+    display: block !important;
+    visibility: visible !important;
   }
 
   .meal-type {
     font-size: 7pt !important;
     color: #95A5B8 !important;
+    display: block !important;
+    visibility: visible !important;
   }
 
-  .meal-portions {
+  .meal-portions,
+  .portions-text {
     font-size: 7pt !important;
     color: #4A90E2 !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .meal-empty {
+    font-size: 8pt !important;
+    color: #95A5B8 !important;
+    font-style: italic !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .meal-actions {
+    display: none !important;
   }
 
   /* Liste de courses (si présente) */
