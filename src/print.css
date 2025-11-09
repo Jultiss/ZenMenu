@@ -20,9 +20,16 @@
   /* Override des styles dark-mode-fixes.css */
   [data-theme="dark"] .meal-cell,
   [data-theme="dark"] .day-label,
+  [data-theme="dark"] .day-cell,
   [data-theme="dark"] .cell {
     background: white !important;
     background-color: white !important;
+  }
+
+  /* Forcer day-cell en bleu clair même en dark */
+  [data-theme="dark"] .day-cell {
+    background: #E8F3FC !important;
+    background-color: #E8F3FC !important;
   }
 
   /* Masquer les éléments non nécessaires */
@@ -41,6 +48,7 @@
   .btn-consomme,
   .portions-control,
   .btn-portion,
+  .btn-change,
   .btn-clear,
   .day-actions {
     display: none !important;
@@ -145,6 +153,20 @@
     justify-content: center !important;
   }
 
+  .day-cell {
+    font-weight: 700 !important;
+    font-size: 10pt !important;
+    color: #2C3E50 !important;
+    background: #E8F3FC !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    visibility: visible !important;
+  }
+
   .day-label {
     font-weight: 700 !important;
     font-size: 10pt !important;
@@ -160,6 +182,7 @@
   .day-name {
     color: #2C3E50 !important;
     visibility: visible !important;
+    display: block !important;
   }
 
   .meal-cell {
@@ -213,19 +236,44 @@
   }
 
   .meal-portions,
-  .portions-text {
+  .portions-text,
+  .portions-display,
+  .portions-display-print {
     font-size: 7pt !important;
     color: #4A90E2 !important;
     display: block !important;
     visibility: visible !important;
   }
 
+  /* Masquer l'affichage portions normal, montrer celui pour print */
+  .portions-display {
+    display: none !important;
+  }
+
+  .portions-display-print {
+    display: block !important;
+  }
+
   .meal-empty {
     font-size: 8pt !important;
     color: #95A5B8 !important;
     font-style: italic !important;
-    display: block !important;
+    display: flex !important;
     visibility: visible !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .meal-empty .add-icon {
+    display: none !important;
+  }
+
+  .meal-empty span:last-child::before {
+    content: "—" !important;
+  }
+
+  .meal-empty span:last-child {
+    font-size: 0 !important;
   }
 
   .meal-actions {
