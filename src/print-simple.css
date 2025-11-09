@@ -1,0 +1,127 @@
+/* PRINT SIMPLE - TEST */
+
+@media print {
+  /* TOUT FORCER EN BLANC ET NOIR */
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+
+  /* Page setup */
+  @page {
+    margin: 2cm;
+    size: A4 portrait;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* MASQUER NAVIGATION ET UI */
+  .navigation,
+  .app-header,
+  .theme-toggle,
+  .header-actions,
+  .btn-action,
+  .btn-export,
+  .modal-overlay,
+  button:not(.test) {
+    display: none !important;
+  }
+
+  /* FORCER AFFICHAGE DU PLAN */
+  .plan-hebdo {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .plan-hebdo h2 {
+    display: block !important;
+    visibility: visible !important;
+    color: black !important;
+    font-size: 24pt !important;
+  }
+
+  .plan-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .grid-header,
+  .grid-row {
+    display: grid !important;
+    grid-template-columns: 100px repeat(4, 1fr) !important;
+    gap: 2px !important;
+    visibility: visible !important;
+  }
+
+  .cell {
+    border: 1px solid black !important;
+    padding: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 60px !important;
+    visibility: visible !important;
+  }
+
+  .header-cell {
+    background: #4A90E2 !important;
+    color: white !important;
+    font-weight: bold !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .day-cell {
+    background: #E8F3FC !important;
+    color: black !important;
+    font-weight: bold !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .meal-cell {
+    background: white !important;
+    color: black !important;
+  }
+
+  .meal-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    visibility: visible !important;
+  }
+
+  .meal-name {
+    display: block !important;
+    visibility: visible !important;
+    color: black !important;
+    font-weight: bold !important;
+  }
+
+  .portions-display-print {
+    display: block !important;
+    visibility: visible !important;
+    font-size: 9pt !important;
+  }
+
+  .meal-empty {
+    display: block !important;
+    visibility: visible !important;
+    color: gray !important;
+  }
+
+  /* Masquer les actions */
+  .meal-actions,
+  .btn-consomme,
+  .portions-control,
+  .day-actions {
+    display: none !important;
+  }
+}

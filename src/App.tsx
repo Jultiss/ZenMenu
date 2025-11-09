@@ -13,7 +13,7 @@ import { RecherchePage } from './pages/RecherchePage';
 import './App.css';
 import './responsive-improvements.css';
 import './dark-mode-fixes.css';
-import './print.css'; // DOIT être en dernier pour override le dark mode en impression
+import './print-simple.css'; // VERSION SIMPLIFIÉE POUR DEBUG
 
 // Fonction pour transformer le nouveau format JSON (tableau) vers l'ancien format (objet)
 function transformerRecettes(data: any): RecettesData {
