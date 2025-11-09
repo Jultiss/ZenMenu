@@ -33,9 +33,13 @@ export function ModalNote({ recette, noteExistante, onSauvegarder, onFermer }: M
     }
   };
 
+  const handleModalClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
+
   return (
     <div className="modal-overlay" onClick={handleOverlayClick}>
-      <div className="modal-note">
+      <div className="modal-note" onClick={handleModalClick}>
         <div className="modal-note-header">
           <h2>📝 {noteExistante ? 'Modifier' : 'Ajouter une note'}</h2>
           <button className="btn-close" onClick={onFermer} aria-label="Fermer">
