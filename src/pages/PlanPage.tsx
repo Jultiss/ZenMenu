@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { RecettesData, RepasPlanifie, TypeRepas, SauvegardePlan } from '../types';
+import { RecettesData, RepasPlanifie, TypeRepas, SauvegardePlan, RecetteNote } from '../types';
 import { PlanHebdo } from '../components/PlanHebdo';
 import { ModalSauvegarde } from '../components/ModalSauvegarde';
 import { HistoriqueSauvegardes } from '../components/HistoriqueSauvegardes';
@@ -19,6 +19,8 @@ interface PlanPageProps {
   onChargerSauvegarde: (sauvegarde: SauvegardePlan) => void;
   onSupprimerSauvegarde: (id: string) => void;
   onToggleConsomme: (jour: number, type: TypeRepas) => void;
+  obtenirNote?: (recetteId: string) => RecetteNote | undefined;
+  onSauvegarderNote?: (recetteId: string, texte: string, etoiles: number) => void;
 }
 
 export function PlanPage({
@@ -33,7 +35,9 @@ export function PlanPage({
   onSauvegarderPlan,
   onChargerSauvegarde,
   onSupprimerSauvegarde,
-  onToggleConsomme
+  onToggleConsomme,
+  obtenirNote,
+  onSauvegarderNote
 }: PlanPageProps) {
   const [modalSauvegardeOuverte, setModalSauvegardeOuverte] = useState(false);
   const [historiqueOuvert, setHistoriqueOuvert] = useState(false);
@@ -83,6 +87,8 @@ export function PlanPage({
         onModifierPortions={onModifierPortions}
         onViderJour={onViderJour}
         onToggleConsomme={onToggleConsomme}
+        obtenirNote={obtenirNote}
+        onSauvegarderNote={onSauvegarderNote}
       />
 
       {modalSauvegardeOuverte && (

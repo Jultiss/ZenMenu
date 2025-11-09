@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { RecettesData, Recette, TypeRepas } from '../types';
+import { RecettesData, Recette, TypeRepas, RecetteNote } from '../types';
 import DetailRecette from '../components/DetailRecette';
 import { JOURS_SEMAINE, TYPES_REPAS } from '../utils/planUtils';
 import './RecherchePage.css';
@@ -8,9 +8,11 @@ import './RecherchePage-modal.css';
 interface RecherchePageProps {
   recettesData: RecettesData;
   onAjouterAuPlan: (jour: number, type: TypeRepas, recetteId: string) => void;
+  obtenirNote?: (recetteId: string) => RecetteNote | undefined;
+  onSauvegarderNote?: (recetteId: string, texte: string, etoiles: number) => void;
 }
 
-export function RecherchePage({ recettesData, onAjouterAuPlan }: RecherchePageProps) {
+export function RecherchePage({ recettesData, onAjouterAuPlan, obtenirNote, onSauvegarderNote }: RecherchePageProps) {
   const [recherche, setRecherche] = useState('');
   const [tagsSelectionnes, setTagsSelectionnes] = useState<string[]>([]);
   const [categorieSelectionnee, setCategorieSelectionnee] = useState<string>('toutes');
@@ -233,6 +235,8 @@ export function RecherchePage({ recettesData, onAjouterAuPlan }: RecherchePagePr
           recette={recetteDetaillee}
           portions={1}
           onClose={() => setRecetteDetaillee(null)}
+          note={obtenirNote ? obtenirNote(recetteDetaillee.id) : undefined}
+          onSauvegarderNote={onSauvegarderNote}
         />
       )}
 

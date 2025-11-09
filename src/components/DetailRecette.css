@@ -258,6 +258,85 @@
   box-shadow: 0 2px 8px rgba(67, 56, 202, 0.3);
 }
 
+/* Section notes et favoris */
+.detail-note-section {
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(123, 104, 238, 0.05) 100%);
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+}
+
+.note-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.current-rating {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.rating-text {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-secondary);
+}
+
+.no-rating {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+.btn-add-note {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-add-note:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  filter: brightness(1.08);
+}
+
+.btn-add-note:active {
+  transform: translateY(0);
+}
+
+.user-note {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-light);
+}
+
+.user-note strong {
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.user-note p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+}
+
 /* Media queries pour desktop */
 @media (min-width: 768px) {
   .detail-recette-overlay {

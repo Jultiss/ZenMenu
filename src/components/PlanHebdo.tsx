@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { RepasPlanifie, RecettesData, TypeRepas } from '../types';
+import { RepasPlanifie, RecettesData, TypeRepas, RecetteNote } from '../types';
 import { JOURS_SEMAINE, TYPES_REPAS, trouverRecette, obtenirRecettesParType } from '../utils/planUtils';
 import { SelecteurRepas } from './SelecteurRepas';
 import './PlanHebdo.css';
@@ -11,9 +11,11 @@ interface PlanHebdoProps {
   onModifierPortions: (jour: number, type: TypeRepas, portions: number) => void;
   onViderJour: (jour: number) => void;
   onToggleConsomme?: (jour: number, type: TypeRepas) => void;
+  obtenirNote?: (recetteId: string) => RecetteNote | undefined;
+  onSauvegarderNote?: (recetteId: string, texte: string, etoiles: number) => void;
 }
 
-export function PlanHebdo({ plan, recettesData, onModifierRepas, onModifierPortions, onViderJour, onToggleConsomme }: PlanHebdoProps) {
+export function PlanHebdo({ plan, recettesData, onModifierRepas, onModifierPortions, onViderJour, onToggleConsomme, obtenirNote, onSauvegarderNote }: PlanHebdoProps) {
   const [selectionEnCours, setSelectionEnCours] = useState<{
     jour: number;
     type: TypeRepas;
@@ -164,6 +166,8 @@ export function PlanHebdo({ plan, recettesData, onModifierRepas, onModifierPorti
           onFermer={fermerSelecteur}
           typeRepas={selectionEnCours.type}
           portions={obtenirRepas(selectionEnCours.jour, selectionEnCours.type)?.portions || 1}
+          obtenirNote={obtenirNote}
+          onSauvegarderNote={onSauvegarderNote}
         />
       )}
     </div>

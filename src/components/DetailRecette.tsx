@@ -1,14 +1,20 @@
-import React from 'react';
-import { Recette } from '../types';
+import React, { useState } from 'react';
+import { Recette, RecetteNote } from '../types';
+import { StarRating } from './StarRating';
+import { ModalNote } from './ModalNote';
 import './DetailRecette.css';
 
 interface DetailRecetteProps {
   recette: Recette;
   portions: number;
   onClose: () => void;
+  note?: RecetteNote;
+  onSauvegarderNote?: (recetteId: string, texte: string, etoiles: number) => void;
 }
 
-const DetailRecette: React.FC<DetailRecetteProps> = ({ recette, portions, onClose }) => {
+const DetailRecette: React.FC<DetailRecetteProps> = ({ recette, portions, onClose, note, onSauvegarderNote }) => {
+  const [modalNoteOuverte, setModalNoteOuverte] = useState(false);
+
   // Calculer les quantités ajustées en fonction des portions
   const ajusterQuantite = (quantite: string, portions: number): string => {
     // Extraire le nombre de la quantité (ex: "150 g" -> 150)
@@ -43,6 +49,42 @@ const DetailRecette: React.FC<DetailRecetteProps> = ({ recette, portions, onClos
 
         {/* Contenu scrollable */}
         <div className="detail-content">
+          {/* Note et favoris */}
+          {onSauvegarderNote && (
+            <div className="detail-section detail-note-section">
+              <div className="note-display">
+                {note && note.etoiles > 0 ? (
+                  <div className="current-rating">
+                    <StarRating rating={note.etoiles} readonly size="medium" />
+                    <span className="rating-text">
+                      {note.etoiles === 1 && 'Bof...'}
+                      {note.etoiles === 2 && 'Passable'}
+                      {note.etoiles === 3 && 'Bien'}
+                      {note.etoiles === 4 && 'Très bien !'}
+                      {note.etoiles === 5 && 'Excellente ! ❤️'}
+                    </span>
+                  </div>
+                ) : (
+                  <span className="no-rating">Pas encore notée</span>
+                )}
+                
+                <button 
+                  className="btn-add-note"
+                  onClick={() => setModalNoteOuverte(true)}
+                >
+                  {note ? '✏️ Modifier ma note' : '⭐ Ajouter une note'}
+                </button>
+              </div>
+              
+              {note && note.note && (
+                <div className="user-note">
+                  <strong>💭 Ma note :</strong>
+                  <p>{note.note}</p>
+                </div>
+              )}
+            </div>
+          )}
+
           {/* Tags de compatibilité */}
           {recette.compatibilite && recette.compatibilite.length > 0 && (
             <div className="detail-section">
@@ -93,6 +135,16 @@ const DetailRecette: React.FC<DetailRecetteProps> = ({ recette, portions, onClos
           </button>
         </div>
       </div>
+
+      {/* Modale de note */}
+      {modalNoteOuverte && onSauvegarderNote && (
+        <ModalNote
+          recette={recette}
+          noteExistante={note}
+          onSauvegarder={onSauvegarderNote}
+          onFermer={() => setModalNoteOuverte(false)}
+        />
+      )}
     </div>
   );
 };

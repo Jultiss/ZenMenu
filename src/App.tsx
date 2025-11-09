@@ -4,6 +4,7 @@ import { RecettesData, RepasPlanifie, TypeRepas, Recette, SauvegardePlan } from 
 import { initializerPlanVide } from './utils/planUtils';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { useTheme } from './hooks/useTheme';
+import { useRecettesNotes } from './hooks/useRecettesNotes';
 import { Navigation } from './components/Navigation';
 import { ThemeToggle } from './components/ThemeToggle';
 import { PlanPage } from './pages/PlanPage';
@@ -62,6 +63,17 @@ function App() {
   const [erreur, setErreur] = useState<string | null>(null);
   const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const { ajouterNote, definirEtoiles, obtenirNote } = useRecettesNotes();
+
+  // Handler pour sauvegarder une note
+  const handleSauvegarderNote = (recetteId: string, texte: string, etoiles: number) => {
+    if (texte) {
+      ajouterNote(recetteId, texte);
+    }
+    if (etoiles > 0) {
+      definirEtoiles(recetteId, etoiles);
+    }
+  };
 
   // Gérer le scroll du header
   useEffect(() => {
@@ -313,6 +325,8 @@ function App() {
                   onChargerSauvegarde={chargerSauvegarde}
                   onSupprimerSauvegarde={supprimerSauvegarde}
                   onToggleConsomme={toggleConsomme}
+                  obtenirNote={obtenirNote}
+                  onSauvegarderNote={handleSauvegarderNote}
                 />
               }
             />
@@ -322,6 +336,8 @@ function App() {
                 <RecherchePage 
                   recettesData={recettesData}
                   onAjouterAuPlan={modifierRepas}
+                  obtenirNote={obtenirNote}
+                  onSauvegarderNote={handleSauvegarderNote}
                 />
               }
             />

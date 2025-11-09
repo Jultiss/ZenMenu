@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Recette, TypeRepas } from '../types';
+import { Recette, TypeRepas, RecetteNote } from '../types';
 import DetailRecette from './DetailRecette';
 import './SelecteurRepas.css';
 
@@ -10,6 +10,8 @@ interface SelecteurRepasProps {
   onFermer: () => void;
   typeRepas: TypeRepas;
   portions?: number;
+  obtenirNote?: (recetteId: string) => RecetteNote | undefined;
+  onSauvegarderNote?: (recetteId: string, texte: string, etoiles: number) => void;
 }
 
 export function SelecteurRepas({
@@ -18,7 +20,9 @@ export function SelecteurRepas({
   onSelectionner,
   onFermer,
   typeRepas,
-  portions = 1
+  portions = 1,
+  obtenirNote,
+  onSauvegarderNote
 }: SelecteurRepasProps) {
   const [recherche, setRecherche] = useState('');
   const [recetteDetaillee, setRecetteDetaillee] = useState<Recette | null>(null);
@@ -122,6 +126,8 @@ export function SelecteurRepas({
           recette={recetteDetaillee}
           portions={portions}
           onClose={() => setRecetteDetaillee(null)}
+          note={obtenirNote ? obtenirNote(recetteDetaillee.id) : undefined}
+          onSauvegarderNote={onSauvegarderNote}
         />
       )}
     </>
